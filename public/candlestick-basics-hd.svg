@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0a0f0d"/>
+  <text x="600" y="60" text-anchor="middle" font-family="Inter, Arial" font-size="36" font-weight="800" fill="#e8f5e9">Bullish vs Bearish — OHLC, Body, Wick</text>
+  <!-- Bullish -->
+  <g>
+    <text x="300" y="120" text-anchor="middle" font-family="Inter, Arial" font-size="30" font-weight="800" fill="#22c55e">Bullish (हरी)</text>
+    <line x1="300" y1="160" x2="300" y2="560" stroke="#e8f5e9" stroke-width="6"/>
+    <rect x="230" y="280" width="140" height="160" rx="8" fill="#22c55e"/>
+    <text x="430" y="175" font-family="Inter, Arial" font-size="26" fill="#e8f5e9">High</text>
+    <text x="430" y="295" font-family="Inter, Arial" font-size="26" fill="#22c55e">Close (ऊपर)</text>
+    <text x="430" y="425" font-family="Inter, Arial" font-size="26" fill="#22c55e">Open (नीचे)</text>
+    <text x="430" y="565" font-family="Inter, Arial" font-size="26" fill="#e8f5e9">Low</text>
+    <text x="300" y="620" text-anchor="middle" font-family="Inter, Arial" font-size="24" fill="#8fa898">Body: Open→Close • Wick: High-Low</text>
+  </g>
+  <!-- Bearish -->
+  <g>
+    <text x="850" y="120" text-anchor="middle" font-family="Inter, Arial" font-size="30" font-weight="800" fill="#ef4444">Bearish (लाल)</text>
+    <line x1="850" y1="160" x2="850" y2="560" stroke="#e8f5e9" stroke-width="6"/>
+    <rect x="780" y="280" width="140" height="160" rx="8" fill="#ef4444"/>
+    <text x="980" y="175" font-family="Inter, Arial" font-size="26" fill="#e8f5e9">High</text>
+    <text x="980" y="295" font-family="Inter, Arial" font-size="26" fill="#ef4444">Open (ऊपर)</text>
+    <text x="980" y="425" font-family="Inter, Arial" font-size="26" fill="#ef4444">Close (नीचे)</text>
+    <text x="980" y="565" font-family="Inter, Arial" font-size="26" fill="#e8f5e9">Low</text>
+    <text x="850" y="620" text-anchor="middle" font-family="Inter, Arial" font-size="24" fill="#8fa898">Body: Open→Close • Wick: High-Low</text>
+  </g>
+  <line x1="600" y1="140" x2="600" y2="600" stroke="#1e3a2b" stroke-width="2" stroke-dasharray="8 8"/>
+</svg>
