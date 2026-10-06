@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-route
 import { AuthProvider, useAuth } from "./lib/auth";
 import { usePosts } from "./lib/store";
 import Header from "./components/Header";
+import SubscribePopup from "./components/SubscribePopup";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
 import Login from "./pages/Login";
@@ -48,6 +49,7 @@ function Shell() {
       <ScrollTop />
       <RouteTitle posts={posts} />
       <Header search={search} setSearch={setSearch} />
+      <SubscribePopup />
       <Routes>
         <Route path="/" element={<Home posts={posts} search={search} />} />
         <Route path="/post/:id" element={<Post posts={posts} onDelete={remove} />} />

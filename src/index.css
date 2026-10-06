@@ -89,3 +89,17 @@ button{font-family:inherit}
 @media(max-width:640px){.row2{grid-template-columns:1fr}}
 .form-actions{display:flex;gap:10px;justify-content:flex-end}
 .error{background:rgba(239,68,68,.12);border:1px solid #ef4444;color:#fca5a5;padding:10px 14px;border-radius:10px;font-size:13px}
+
+/* Subscribe popup */
+.popup-bg{position:fixed;inset:0;z-index:50;background:rgba(4,10,20,.7);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px;animation:popfade .3s ease}
+.popup{position:relative;background:linear-gradient(180deg,#13263f,#0b1728);border:1px solid var(--green);border-radius:18px;padding:34px 28px 26px;max-width:380px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5);animation:popin .35s ease}
+.popup h3{font-size:21px;margin:10px 0 8px}
+.popup p{font-size:14px;line-height:1.6;margin-bottom:16px}
+.popup-emoji{font-size:44px}
+.popup .btn{width:100%;font-size:16px}
+.popup-skip{background:none;border:0;color:var(--muted);font-size:13px;margin-top:12px;cursor:pointer}
+.popup-skip:hover{color:var(--text)}
+.popup-x{position:absolute;top:10px;right:12px;background:none;border:0;color:var(--muted);font-size:16px;cursor:pointer}
+.popup-x:hover{color:var(--text)}
+@keyframes popin{from{transform:scale(.9) translateY(12px);opacity:0}to{transform:none;opacity:1}}
+@keyframes popfade{from{opacity:0}to{opacity:1}}
