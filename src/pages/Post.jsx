@@ -55,7 +55,7 @@ export default function Post({ posts, onDelete }) {
           }}>🗑️ Delete</button>
         </div>
       )}
-      <div className="footer">Made by <a href="https://hoshiyartech.in/company" target="_blank" rel="noreferrer"><b>HoshiyarTech</b></a></div>
+      <div className="footer">Made by <a href="https://hoshiyartech.in/company" target="_blank" rel="noreferrer"><b>HoshiyarTech</b></a> • <a href="https://wa.me/917646907049" target="_blank" rel="noreferrer">💬 WhatsApp</a></div>
     </div>
   );
 }

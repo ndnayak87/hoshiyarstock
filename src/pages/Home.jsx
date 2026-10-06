@@ -50,7 +50,7 @@ export default function Home({ posts, search }) {
         </div>
       )}
       <div className="disclaimer">⚠️ <b>Disclaimer:</b> Ye site shiksha ke liye hai, nivesh salah nahi! Share market me jokhim hai — paise lagane se pehle khud research karo ya SEBI-registered advisor se salah lo!</div>
-      <div className="footer">Made by <a href="https://hoshiyartech.in/company" target="_blank" rel="noreferrer"><b>HoshiyarTech</b></a> • HoshiyarStock</div>
+      <div className="footer">Made by <a href="https://hoshiyartech.in/company" target="_blank" rel="noreferrer"><b>HoshiyarTech</b></a> • HoshiyarStock • <a href="https://wa.me/917646907049" target="_blank" rel="noreferrer">💬 WhatsApp</a></div>
     </div>
   );
 }
