@@ -1,12 +1,25 @@
 import { useEffect } from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useNavigate, useParams, Link, Navigate } from "react-router-dom";
 import { renderMarkdown } from "../lib/markdown";
 import { useAuth } from "../lib/auth";
+
+// Purane deleted slugs -> naye articles (Google me purane URLs index hain)
+const REDIRECTS = {
+  "hammer-candle-kya-hai-hindi-me": "hammer-candlestick-pattern-hindi",
+  "doji-candle-kya-hai-hindi-me": "candlestick-chart-basics-hindi",
+  "candlestick-chart-kaise-padhe-basics-hindi": "candlestick-chart-basics-hindi",
+  "hammer-candlestick-pattern-identify-meaning": "hammer-candlestick-pattern-hindi",
+  "p1": "hammer-candlestick-pattern-hindi",
+  "p2": "candlestick-chart-basics-hindi",
+  "p3": "candlestick-chart-basics-hindi",
+  "p4": "hammer-candlestick-pattern-hindi",
+};
 
 export default function Post({ posts, onDelete }) {
   const { id } = useParams();
   const nav = useNavigate();
   const { isAdmin } = useAuth();
+  if (REDIRECTS[id]) return <Navigate to={`/post/${REDIRECTS[id]}`} replace />;
   const post = posts.find((b) => b.id === id || b.slug === id);
 
   useEffect(() => {
