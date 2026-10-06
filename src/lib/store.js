@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { SEED_POSTS } from "./seed";
 
-const KEY = "hstock_posts_v4";
+const KEY = "hstock_posts_v5";
 
 function read() {
   try {
