@@ -2,6 +2,98 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p10",
+    slug: "bearish-engulfing-pattern-hindi",
+    title: "Bearish Engulfing Pattern क्या है? SBI के Real Chart से समझें",
+    category: "Candle Patterns",
+    tags: ["bearish engulfing", "candle patterns", "chart reading", "sbi", "technical analysis"],
+    excerpt: "SBI की वास्तविक Candles से समझिए कि Bearish Engulfing कैसे बनता है और उसके बाद गिरावट के साथ उछाल भी क्यों देखना चाहिए।",
+    content: `तेजी से बढ़ते शेयर में अचानक बड़ी Red Candle बन जाए, तो क्या गिरावट शुरू हो गई? जवाब जानने के लिए केवल उसका रंग देखना काफी नहीं है। पिछली Candle और पहले की Price Movement भी देखनी होगी।
+
+[Bullish Engulfing Pattern क्या है](/post/bullish-engulfing-pattern-hindi) के बाद अब उसके उलट Pattern को समझते हैं — Bearish Engulfing।
+
+### Bearish Engulfing की पहचान
+
+यह दो Candles का Pattern है, जिसे पहले की तेजी के संदर्भ में देखते हैं। पहली Candle Green होती है। अगली Red Candle की Body, पहली Green Body को पूरी तरह ढक लेती है। यह संभावित कमजोरी का संकेत है।
+
+Body यानी Open और Close के बीच का मोटा हिस्सा। Wick यानी High और Low तक की पतली रेखा। Engulfing की मुख्य कसौटी Body है; पूरी Wick ढकना जरूरी नहीं।
+
+### Real Chart: SBI में कहाँ बना Pattern?
+
+![SBI का 30 जुलाई से 14 अगस्त 2026 Daily Chart, Bearish Engulfing और बाद की Price Movement](/bearish-engulfing-sbi-real-chart.png)
+
+शेयर: State Bank of India (NSE:SBIN)
+Timeframe: Daily
+Chart अवधि: 30 जुलाई-14 अगस्त 2026
+Pattern: 7 और 10 अगस्त 2026 के लगातार कारोबारी सत्र
+
+Chart की शुरुआत में छोटी अवधि की तेजी दिखती है। पीली छाया में चिन्हित जोड़ी पर ध्यान दें: पहले Green और फिर बड़ी Red Candle।
+
+| Price | 7 अगस्त: Green | 10 अगस्त: Red |
+|---|---|---:|
+| Open | ₹1,080.10 | ₹1,108.00 |
+| High | ₹1,124.50 | ₹1,113.30 |
+| Low | ₹1,075.70 | ₹1,068.60 |
+| Close | ₹1,097.20 | ₹1,071.00 |
+
+हमारी गणना में पहली Body ₹17.10 और दूसरी ₹37.00 की है। दूसरी Candle पिछली Close के ऊपर खुली और पिछली Open के नीचे बंद हुई। इसलिए उसकी Body ने पहली Body का पूरा क्षेत्र ढक लिया।
+
+### Zoom Chart: Body और Wick का फर्क
+
+![SBI की 7 और 10 अगस्त 2026 Candles में Red Body द्वारा Green Body को ढकना](/bearish-engulfing-sbi-body-detail.png)
+
+पीली पट्टी Green Body का क्षेत्र दिखाती है। Red Body इस पट्टी के ऊपर से नीचे तक फैली है। पहली Candle की ऊपरी Wick फिर भी ज्यादा ऊँची है — इससे Body Engulfing की पहचान नहीं बदलती।
+
+### अगले सत्र में क्या हुआ?
+
+11 अगस्त का Close ₹1,066 रहा, जो Pattern के सबसे निचले Low ₹1,068.60 से नीचे था। लेकिन 12 अगस्त को भाव उछला और Close ₹1,082 हुआ।
+
+इस उदाहरण में पहले कमजोरी आई, फिर उछाल। इसलिए Bearish संकेत का मतलब रोज लगातार गिरावट नहीं है।
+
+### Confirmation को आसान भाषा में समझें
+
+Pattern बनना एक घटना है; उसके बाद की चाल दूसरी। अभ्यास के लिए पहले एक स्पष्ट शर्त चुन सकते हैं: क्या अगली पूरी Daily Candle, Pattern Low के नीचे बंद हुई?
+
+ऊपर के उदाहरण में यह शर्त पूरी हुई। फिर भी उसके बाद उछाल आया। इससे समझ आता है कि Confirmation भी भविष्य की गारंटी नहीं है। यह केवल हमारी चुनी हुई जाँच है, सबके लिए अनिवार्य Trading Rule नहीं।
+
+### Beginners की आम गलतियाँ
+
+- हर बड़ी Red Candle को Bearish Engulfing मान लेना।
+- पहले की तेजी देखे बिना Pattern का नाम लगा देना।
+- Body की जगह केवल Wicks की तुलना करना।
+- अधूरी Candle देखकर अंतिम निष्कर्ष निकाल लेना।
+- बाद का Chart देखकर मान लेना कि गिरावट पहले से निश्चित थी।
+
+### खुद Chart पढ़ने का छोटा अभ्यास
+
+पुराना Chart खोलें और आगे की Candles छिपा दें। पहले Trend देखें, फिर दो Candles के Open-Close लिखें। Pattern मिलने पर अपनी Confirmation की शर्त नोट करें। इसके बाद अगली Candles खोलकर परिणाम जाँचें।
+
+अपनी नोटबुक में सफल और असफल दोनों उदाहरण रखें। एक चुना हुआ Chart किसी Pattern की सफलता-दर साबित नहीं करता; उसके लिए स्पष्ट नियमों पर कई उदाहरण जाँचना पड़ता है।
+
+यह लेख शिक्षा के लिए है, किसी शेयर को खरीदने, बेचने या Short करने की सलाह नहीं।
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Bearish Engulfing में कितनी Candles होती हैं?**
+दो — पहली Green और दूसरी Red, जिसकी Body पहली की Body को ढकती है।
+
+**2. क्या Wicks भी ढकनी चाहिए?**
+Body Engulfing की कसौटी में जरूरी नहीं। ऊपर के SBI उदाहरण में पहली Wick ज्यादा ऊँची है।
+
+**3. क्या Pattern के बाद रोज गिरावट होती है?**
+नहीं। हमारे उदाहरण में कमजोरी के बाद उछाल भी आया।
+
+**4. Bullish और Bearish Engulfing में क्या अंतर है?**
+Bullish में Green Body पिछली Red Body को ढकती है; Bearish में क्रम उलटा होता है। पहले का Trend भी साथ देखें।
+
+**5. क्या केवल इस Pattern से फैसला लेना चाहिए?**
+एक Pattern पूरी जानकारी नहीं देता। Trend, बाद की Price Movement और जोखिम को साथ समझना जरूरी है।`,
+    author: "HoshiyarStock",
+    date: "2026-10-07",
+    readTime: 8,
+    cover: "/bearish-engulfing-pattern-hindi.png",
+  },
+  {
     id: "p9",
     slug: "bullish-engulfing-pattern-hindi",
     title: "Bullish Engulfing Pattern क्या है? Real Chart से आसान भाषा में समझें",
