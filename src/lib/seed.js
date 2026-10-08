@@ -2,6 +2,124 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p13",
+    slug: "moving-average-sma-hindi",
+    title: "Moving Average क्या है? Real Chart से 5-Day SMA समझें",
+    category: "Basics",
+    tags: ["moving average", "sma", "ema", "basics", "technical analysis", "chart reading"],
+    excerpt: "Chart की Moving Average Line बनती कैसे है? पाँच वास्तविक Closing Prices से SMA निकालें और जानें कि नया सत्र आने पर औसत कैसे बदलता है।",
+    content: `Stock Chart पर Candles के बीच चलती पीली या नीली Line आपने देखी होगी। कई बार वह कीमत के पास रहती है और कई बार उससे दूर। लेकिन यह Line बनती कैसे है?
+
+Moving Average का एक सरल रूप है SMA यानी Simple Moving Average। इसे समझने के लिए शुरुआत पाँच Closing Prices के औसत से कर सकते हैं।
+
+## Moving Average का मतलब
+
+यह चुने हुए पिछले Periods की कीमतों का औसत दिखाता है। इस लेख में Daily Chart की Closing Prices इस्तेमाल की गई हैं।
+
+5-Day SMA = नवीनतम 5 कारोबारी सत्रों के Close का जोड़ ÷ 5
+
+नया सत्र पूरा होने पर उसकी Closing Price शामिल होती है और सबसे पुरानी Price बाहर निकल जाती है। इसीलिए औसत समय के साथ बदलता है और इसे Moving Average कहते हैं।
+
+पाँच दिन का अर्थ पाँच कारोबारी सत्र है, पाँच कैलेंडर दिन नहीं।
+
+## Real Chart: HDFC Bank और 5-Day SMA
+
+![HDFC Bank का 21 सितंबर-6 अक्टूबर 2026 Daily Chart, जिसमें 30 सितंबर का 5-Day SMA ₹722.99 है](/moving-average-hdfc-real-chart.png)
+
+शेयर: HDFC Bank (NSE:HDFCBANK)
+Chart अवधि: 21 सितंबर-6 अक्टूबर 2026
+Timeframe: Daily
+Indicator: 5-Day SMA
+Price Source: Close
+
+Chart में Candles वास्तविक Open, High, Low और Close दिखाती हैं। पीली Line हर सत्र तक उपलब्ध नवीनतम पाँच Closing Prices का औसत है।
+
+## 30 सितंबर का SMA खुद निकालें
+
+| कारोबारी तारीख, 2026 | Close |
+|---|---:|
+| 24 सितंबर | ₹728.90 |
+| 25 सितंबर | ₹735.60 |
+| 28 सितंबर | ₹719.05 |
+| 29 सितंबर | ₹722.70 |
+| 30 सितंबर | ₹708.70 |
+
+जोड़ = ₹3,614.95
+5-Day SMA = ₹3,614.95 ÷ 5 = ₹722.99
+
+उस दिन Close ₹708.70 था। इसलिए Candle का Close, SMA से ₹14.29 नीचे था। Chart में यही अंतर चिन्हित है।
+
+## अगले सत्र में औसत क्यों बदला?
+
+1 अक्टूबर का Close ₹721.20 शामिल हुआ और 24 सितंबर का ₹728.90 बाहर निकला।
+
+नया SMA = (₹3,614.95 − ₹728.90 + ₹721.20) ÷ 5 = ₹721.45
+
+यहाँ एक दिलचस्प बात है: पिछले सत्र से Close बढ़ा, लेकिन SMA थोड़ा घटा। कारण यह है कि औसत से निकली पुरानी Price, शामिल हुई नई Price से अधिक थी।
+
+## Chart पर Line कैसे पढ़ें?
+
+पहले देखें कि Close, SMA से ऊपर है या नीचे। यह बताता है कि वर्तमान Close चुनी हुई अवधि के औसत की तुलना में कहाँ है।
+
+फिर Line की दिशा देखें। ऊपर उठती SMA औसत कीमत बढ़ने और नीचे झुकती SMA औसत कीमत घटने का संकेत देती है।
+
+केवल Line छूने या पार करने से भविष्य का परिणाम तय नहीं होता। यह पिछली कीमतों से बनी गणना है, आगे का भाव बताने वाली निश्चित भविष्यवाणी नहीं।
+
+## 5-Day और 20-Day SMA में क्या फर्क है?
+
+5-Day SMA में कम Prices शामिल होती हैं, इसलिए यह छोटी अवधि के बदलावों पर सामान्यतः जल्दी प्रतिक्रिया करती है। 20-Day SMA अधिक सत्रों को समेटती है और अक्सर अधिक Smooth होती है, लेकिन बदलाव दिखाने में अधिक देरी हो सकती है।
+
+यहाँ पाँच सत्र केवल गणना आसानी से सीखने के लिए चुने गए हैं। इसे हर शेयर के लिए सबसे अच्छा Trading Setting न मानें।
+
+## SMA और EMA एक ही हैं?
+
+नहीं। SMA में चुने हुए सभी Periods का Weight बराबर होता है। EMA में हाल की कीमतों को अधिक Weight दिया जाता है, इसलिए समान Period वाली EMA सामान्यतः तेजी से प्रतिक्रिया करती है।
+
+तेज प्रतिक्रिया अपने आप बेहतर नतीजों की गारंटी नहीं है।
+
+## Beginners की तीन गलतियाँ
+
+1. SMA के ऊपर भाव देखकर उसे पक्का Buy Signal मान लेना।
+2. Daily और पाँच मिनट के Chart पर समान Length को समान अवधि समझना।
+3. बार-बार Line पार करने वाले Sideways Market में हर Cross को नया Trend मान लेना।
+
+Daily Chart पर Length 5 का मतलब पाँच Daily Candles है। पाँच मिनट के Chart पर इसका मतलब पाँच पाँच-मिनट की Candles होगा।
+
+## छोटा अभ्यास
+
+Chart में SMA चुनें, Length 5 और Source Close रखें। किसी पूरी हो चुकी Daily Candle पर रुकें। उस सत्र सहित नवीनतम पाँच Closes जोड़कर पाँच से भाग दें।
+
+फिर Chart की SMA Value से अपनी गणना मिलाएँ। अंतर हो तो Timeframe, Source और Price Adjustment Settings जाँचें।
+
+यह लेख शिक्षा के लिए है, किसी शेयर को खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Doji Candle क्या है](/post/doji-candle-pattern-hindi)
+- [Green Candle के बावजूद शेयर नीचे क्यों](/post/green-candle-negative-day-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. SMA का पूरा नाम क्या है?**
+Simple Moving Average। यह चुने हुए Periods की कीमतों का साधारण औसत है।
+
+**2. 5-Day SMA कैसे निकालते हैं?**
+संबंधित सत्र सहित नवीनतम पाँच कारोबारी सत्रों के Close जोड़कर पाँच से भाग दें।
+
+**3. क्या Price बढ़ने पर SMA हमेशा बढ़ेगी?**
+नहीं। नई शामिल Price और बाहर निकली पुरानी Price का अंतर भी औसत की दिशा तय करता है।
+
+**4. SMA और EMA में क्या फर्क है?**
+SMA बराबर Weight देती है; EMA हाल की कीमतों को अधिक Weight देती है।
+
+**5. क्या SMA के ऊपर Close पक्का Buy Signal है?**
+नहीं। अकेली Moving Average भविष्य की तेजी या मुनाफा निश्चित नहीं करती।`,
+    author: "HoshiyarStock",
+    date: "2026-10-08",
+    readTime: 8,
+    cover: "/moving-average-sma-hindi.png",
+  },
+  {
     id: "p12",
     slug: "green-candle-negative-day-hindi",
     title: "Green Candle के बावजूद शेयर नीचे क्यों? Real Chart से समझें",
