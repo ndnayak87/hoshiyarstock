@@ -2,6 +2,115 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p11",
+    slug: "doji-candle-pattern-hindi",
+    title: "Doji Candle क्या है? Real Chart से Open और Close का मतलब समझें",
+    category: "Basics",
+    tags: ["doji candle", "candlestick basics", "chart reading", "sbi", "technical analysis"],
+    excerpt: "छोटी Body का मतलब छोटी Price Movement नहीं। SBI की वास्तविक Doji से Open-Close, High-Low और अगली Candle को पढ़ना सीखें।",
+    content: `कभी Chart में Candle की मोटी Body की जगह केवल एक पतली आड़ी लाइन दिखाई देती है। उसे देखकर सवाल आता है — क्या उस दिन शेयर की कीमत चली ही नहीं?
+
+जरूरी नहीं। कीमत दिनभर ऊपर-नीचे घूमकर भी लगभग वहीं बंद हो सकती है, जहाँ से शुरू हुई थी। Doji Candle को समझने की शुरुआत यहीं से होती है।
+
+## Doji की पहचान
+
+जब किसी Candle का Open और Close बराबर या लगभग बराबर हो, तो उसकी Body बहुत पतली या लगभग गायब दिखती है। इसे Doji कहते हैं।
+
+ऊपर और नीचे की Wicks की लंबाई अलग हो सकती है। Technical Analysis में इसे अक्सर अनिर्णय का संकेत माना जाता है। अकेली Doji यह तय नहीं करती कि अगली चाल ऊपर होगी या नीचे।
+
+## Real Chart: SBI की Doji
+
+![SBI का 7-18 अगस्त 2026 Daily Chart और 13 अगस्त की Doji, जिसमें Open और Close ₹1,083 हैं](/doji-sbi-real-chart.png)
+
+शेयर: State Bank of India (NSE:SBIN)
+Timeframe: Daily
+Chart अवधि: 7-18 अगस्त 2026
+Doji की तारीख: 13 अगस्त 2026
+
+उस सत्र का डेटा:
+
+| Price | मूल्य |
+|---|---:|
+| Open | ₹1,083.00 |
+| High | ₹1,086.80 |
+| Low | ₹1,073.00 |
+| Close | ₹1,083.00 |
+
+Open और Close बराबर हैं। इसलिए Body की ऊँचाई शून्य है। लेकिन High और Low अलग हैं, इसलिए Wicks दिखाई देती हैं।
+
+हमारी गणना:
+
+- Body = Open और Close का अंतर = ₹0.00
+- पूरे सत्र की Range = High − Low = ₹13.80
+
+यानी Body शून्य होने के बावजूद कीमत ₹13.80 की Range में घूमी।
+
+## Chart को तीन हिस्सों में पढ़ें
+
+बाईं तरफ पूरा Chart है। पीली छाया वाली Candle Doji है। दाईं तरफ उसी का बड़ा दृश्य है; उसका Price Scale अलग है।
+
+आड़ी पीली लाइन Open और Close दिखाती है। ऊपर की Wick High तक और नीचे की Wick Low तक जाती है। यहाँ दोनों Wicks बराबर नहीं हैं, फिर भी Open-Close बराबर होने की शर्त पूरी होती है।
+
+## अगले दिन क्या हुआ?
+
+14 अगस्त को Close ₹1,067.70 रहा — Doji के Low ₹1,073 से नीचे। इस उदाहरण में अगली Candle ने कमजोरी दिखाई।
+
+लेकिन यह बाद में दिखा परिणाम है। Doji बनते समय इस गिरावट को निश्चित नहीं कहा जा सकता था।
+
+## एक और फर्क: Open-Close और Daily Change
+
+Candle की Body, उसी सत्र के Open और Close की तुलना करती है। Daily Change आम तौर पर पिछली कारोबारी तारीख के Close से तुलना करता है।
+
+इसलिए किसी शेयर में Doji बनने पर भी पिछले Close की तुलना में लाभ या नुकसान दिख सकता है। दोनों गणनाएँ अलग सवालों का जवाब देती हैं।
+
+## Doji और Spinning Top में अंतर
+
+Doji में Body लगभग गायब या बहुत पतली होती है। Spinning Top में छोटी, लेकिन दिखाई देने वाली Body होती है। दोनों को केवल रंग देखकर पहचानना ठीक नहीं। पहले Open-Close और Candle की पूरी बनावट देखें।
+
+## Doji देखकर क्या जाँचना चाहिए?
+
+1. Candle पूरी हुई है या अभी बन रही है?
+2. उससे पहले कीमत किस दिशा में चल रही थी?
+3. अगली Candle कहाँ बंद हुई?
+4. क्या आप पूरी Price Movement देख रहे हैं या केवल एक निशान?
+
+हमारे उदाहरण में Doji से पहले गिरावट और एक उछाल दोनों दिखते हैं। इसे लंबी तेजी के शीर्ष पर बना आदर्श Reversal बताना सही नहीं होगा। यहाँ इसका उपयोग Candle की बनावट सीखने के लिए है।
+
+## छोटा अभ्यास
+
+पुराने Chart पर कोई Doji चुनें। आगे की Candles छिपाकर उसका Open, High, Low और Close लिखें। Body और Range अलग-अलग निकालें। फिर अगली Candles खोलकर देखें कि क्या हुआ।
+
+कम से कम कई अलग उदाहरण दर्ज करें। केवल एक सफल दिखने वाले Chart से किसी Pattern की सफलता-दर नहीं निकाली जा सकती।
+
+यह लेख शिक्षा के लिए है, किसी शेयर को खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Bullish Engulfing Pattern क्या है](/post/bullish-engulfing-pattern-hindi)
+- [Bearish Engulfing Pattern क्या है](/post/bearish-engulfing-pattern-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Doji Candle क्या है?**
+जिस Candle का Open और Close बराबर या लगभग बराबर हो, उसे Doji कहते हैं।
+
+**2. क्या Doji का मतलब दिनभर कीमत नहीं बदली?**
+नहीं। High और Low अलग हो सकते हैं। हमारे SBI उदाहरण की Range ₹13.80 थी।
+
+**3. क्या Doji हमेशा Reversal बताती है?**
+नहीं। अकेली Doji अगली दिशा निश्चित नहीं करती।
+
+**4. क्या दोनों Wicks बराबर होनी चाहिए?**
+नहीं। Doji की मुख्य पहचान Open और Close का बराबर या लगभग बराबर होना है।
+
+**5. Doji और Spinning Top में क्या फर्क है?**
+Doji की Body लगभग गायब या बेहद पतली होती है; Spinning Top में छोटी, दिखाई देने वाली Body होती है।`,
+    author: "HoshiyarStock",
+    date: "2026-10-08",
+    readTime: 7,
+    cover: "/doji-candle-pattern-hindi.png",
+  },
+  {
     id: "p10",
     slug: "bearish-engulfing-pattern-hindi",
     title: "Bearish Engulfing Pattern क्या है? SBI के Real Chart से समझें",
