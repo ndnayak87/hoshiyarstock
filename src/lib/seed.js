@@ -2,6 +2,114 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p12",
+    slug: "green-candle-negative-day-hindi",
+    title: "Green Candle के बावजूद शेयर नीचे क्यों? Real Chart से समझें",
+    category: "Market Gyaan",
+    tags: ["market gyaan", "candlestick basics", "daily change", "previous close", "chart reading"],
+    excerpt: "हरी Candle के साथ नुकसान और लाल Candle के साथ बढ़त — SBI के दो वास्तविक उदाहरणों से जानें कि यह कैसे संभव है।",
+    content: `आपने Trading App खोला। शेयर के सामने नुकसान दिख रहा है, लेकिन Daily Chart में Candle हरी है। क्या Chart गलत है?
+
+जरूरी नहीं। Candle का रंग और Daily Change दो अलग तुलना दिखा सकते हैं। फर्क समझते ही यह उलझन दूर हो जाती है।
+
+## Candle का रंग किससे तय होता है?
+
+सामान्य Candlestick Chart में Green Candle का मतलब है कि Close, उसी Candle के Open से ऊपर है। Red Candle में Close, Open से नीचे होता है।
+
+Daily Candle एक कारोबारी सत्र दिखाती है। पाँच मिनट के Chart में यही तुलना उन पाँच मिनट के Open और Close के बीच होगी।
+
+इस लेख के Chart में सामान्य Open-Close colour rule इस्तेमाल किया गया है।
+
+## Daily Change किससे बनता है?
+
+पूरे हुए कारोबारी सत्र का Daily Change आम तौर पर उसके Close की तुलना पिछले कारोबारी सत्र के Close से करता है।
+
+Daily Change = आज का Close − पिछला Close
+
+Daily Change % = (Daily Change ÷ पिछला Close) × 100
+
+यहाँ पिछला Close हमेशा पिछले कैलेंडर दिन का नहीं होता। बीच में छुट्टी हो सकती है।
+
+## Real Chart: SBI के दो उलटे दिखने वाले उदाहरण
+
+![SBI की 1 अक्टूबर 2026 Green Candle के साथ −0.56% और 5 अक्टूबर की Red Candle के साथ +0.41% Daily Change](/green-candle-negative-day-sbi.png)
+
+शेयर: State Bank of India (NSE:SBIN)
+Timeframe: Daily
+तारीखें: 1 और 5 अक्टूबर 2026
+पीली टूटी लाइन: संबंधित पिछले कारोबारी सत्र का Close
+दोनों हिस्सों का Price Scale समान है।
+
+### उदाहरण 1: Green Candle, फिर भी नुकसान
+
+1 अक्टूबर को SBI का Open ₹953.10 और Close ₹954.10 था। पिछला कारोबारी Close, 30 सितंबर का ₹959.50 था।
+
+Open से Close: ₹954.10 − ₹953.10 = +₹1.00 — इसलिए Candle Green है।
+
+पिछले Close से बदलाव: ₹954.10 − ₹959.50 = −₹5.40 — Daily Change लगभग −0.56% है।
+
+शेयर नीचे खुला और अपने Open से सुधरा, लेकिन पिछले Close तक नहीं पहुँचा। इसलिए हरी Candle और दैनिक नुकसान साथ दिखे।
+
+### उदाहरण 2: Red Candle, फिर भी बढ़त
+
+5 अक्टूबर को Open ₹959.00 और Close ₹958.00 था। पिछला कारोबारी Close ₹954.10 था।
+
+Open से Close: ₹958.00 − ₹959.00 = −₹1.00 — इसलिए Candle Red है।
+
+पिछले Close से बदलाव: ₹958.00 − ₹954.10 = +₹3.90 — Daily Change लगभग +0.41% है।
+
+इस बार शेयर ऊपर खुला। Open से कुछ नीचे बंद होने के बाद भी पिछला Close पीछे रह गया।
+
+## अपनी App में क्या देखें?
+
+इन तीन Prices को साथ रखें: Previous Close, Open और Close। केवल रंग देखकर पूरे दिन का प्रदर्शन तय न करें।
+
+Market खुला हो तो दिन का अंतिम Close अभी बना नहीं है। स्क्रीन का Live Change आम तौर पर चल रही कीमत और पिछले Close की तुलना करता है। बन रही Candle का रंग भी बदल सकता है।
+
+## Colour setting भी फर्क पैदा करती है
+
+कुछ Chart Platforms में "Color bars based on previous close" जैसा विकल्प होता है। इसे चालू करने पर रंग का आधार अपनी Candle का Open नहीं, पिछली Candle का Close हो सकता है।
+
+इसलिए दो Apps में अलग रंग दिखे तो पहले Symbol, Exchange, Timeframe, Chart Type और Colour Settings मिलाएँ। सीधे यह न मानें कि Price Data गलत है।
+
+## छोटा अभ्यास
+
+कल्पना करें: Previous Close ₹100, Open ₹95 और Close ₹98।
+
+सामान्य नियम में Candle Green होगी, क्योंकि ₹98, ₹95 से ऊपर है। लेकिन Daily Change −₹2 यानी −2% होगा, क्योंकि तुलना ₹100 से है।
+
+यह अभ्यास काल्पनिक है। ऊपर दिया SBI Chart वास्तविक ऐतिहासिक डेटा से बनाया गया है।
+
+Candle का रंग पढ़ते समय पूछें: "तुलना किस कीमत से हो रही है?" यही सवाल Open-Close Movement और Daily Change को अलग समझने में मदद करता है।
+
+यह लेख शिक्षा के लिए है, किसी शेयर को खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Doji Candle क्या है](/post/doji-candle-pattern-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. क्या Green Candle के बावजूद Daily Change negative हो सकता है?**
+हाँ। Close अपने Open से ऊपर, लेकिन पिछले कारोबारी Close से नीचे हो सकता है।
+
+**2. क्या Red Candle के बावजूद शेयर दिन में बढ़त पर बंद हो सकता है?**
+हाँ। Close अपने Open से नीचे, लेकिन पिछले Close से ऊपर हो सकता है।
+
+**3. Daily Change % कैसे निकालते हैं?**
+आज के Close से पिछले Close को घटाएँ, फिर पिछले Close से भाग देकर 100 से गुणा करें।
+
+**4. अलग Apps में Candle का रंग अलग क्यों दिख सकता है?**
+Colour Settings या Chart Type अलग हो सकते हैं। Symbol, Exchange और Timeframe भी जाँचें।
+
+**5. क्या Green Candle अपने आप Buy Signal है?**
+नहीं। रंग केवल चुनी हुई तुलना बताता है; उससे भविष्य की तेजी निश्चित नहीं होती।`,
+    author: "HoshiyarStock",
+    date: "2026-10-08",
+    readTime: 7,
+    cover: "/green-candle-negative-day-hindi.png",
+  },
+  {
     id: "p11",
     slug: "doji-candle-pattern-hindi",
     title: "Doji Candle क्या है? Real Chart से Open और Close का मतलब समझें",
