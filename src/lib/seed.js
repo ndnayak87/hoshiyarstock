@@ -2,6 +2,121 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p15",
+    slug: "gap-up-gap-down-hindi",
+    title: "Gap Up और Gap Down क्या हैं? Real Chart से आसान भाषा में समझें",
+    category: "Basics",
+    tags: ["gap up", "gap down", "gap fill", "candlestick basics", "price action", "market education"],
+    excerpt: "ऊपर खुला शेयर गिरकर बंद हो सकता है और नीचे खुला शेयर Green Candle बना सकता है। Real Chart से Opening Gap और Candle Colour का फर्क सीखें।",
+    content: `सुबह शेयर ऊपर खुला, लेकिन शाम तक गिर गया। दूसरी तरफ, नीचे खुला शेयर दिन के अंत में Green Candle बना गया। ऐसा क्यों?
+
+क्योंकि **Opening Gap शुरुआत की स्थिति बताता है। पूरे दिन की दिशा बाद की कीमतों से पता चलती है।**
+
+## Gap Up और Gap Down का मतलब
+
+पिछले Trading Session के Close से अगले Session के Open की तुलना करें:
+
+- **Gap Up Opening:** नया Open, पिछले Close से ऊपर।
+- **Gap Down Opening:** नया Open, पिछले Close से नीचे।
+- दोनों बराबर हों तो इस तुलना में Opening Gap नहीं है।
+
+यहाँ "पिछला Session" जरूरी है। बीच में छुट्टी हो तो पिछली calendar date का भाव नहीं, पिछले कारोबारी दिन का Close लें।
+
+## Real Chart: शुरुआत और अंतिम नतीजा अलग हो सकते हैं
+
+![HDFC Bank के 29 सितंबर और 5 अक्टूबर 2026 के Daily Chart में Gap Down और Gap Up की तुलना](/gap-up-down-hdfc-real-chart.png)
+
+यह चार्ट HDFC Bank के NSE historical OHLC data से बनाया गया है। हर Candle एक पूरे Trading Session की है। पीली dashed line पिछले Close को और नीली dotted line नए Open को दिखाती है।
+
+| जानकारी | Gap Down उदाहरण | Gap Up उदाहरण |
+|---|---:|---:|
+| उदाहरण की तारीख | 29 सितंबर 2026 | 5 अक्टूबर 2026 |
+| पिछला Trading Session | 28 सितंबर | 1 अक्टूबर |
+| Previous Close | ₹719.05 | ₹721.20 |
+| नया Open | ₹713.70 | ₹731.95 |
+| Opening Gap | −₹5.35 | +₹10.75 |
+| Gap प्रतिशत | −0.74% | +1.49% |
+| उसी दिन का Close | ₹722.70 | ₹704.80 |
+
+## उदाहरण 1: Gap Down हुआ, फिर भी Green Candle क्यों बनी?
+
+Chart के बाएँ हिस्से में 29 सितंबर का Open ₹713.70 है। पिछले Session का Close ₹719.05 था, इसलिए शेयर ₹5.35 नीचे खुला।
+
+लेकिन उस दिन Close ₹722.70 रहा — अपने Open से ₹9 ऊपर। सामान्य Open-Close colour setting में इसलिए Candle Green बनी।
+
+**सीख:** Gap Down देखकर यह तय नहीं होता कि शेयर दिन भर गिरता रहेगा।
+
+## उदाहरण 2: Gap Up हुआ, फिर भी शेयर गिरा
+
+दाएँ हिस्से में 5 अक्टूबर का Open ₹731.95 है, जबकि पिछले Session का Close ₹721.20 था। यानी शुरुआत लगभग 1.49% ऊपर हुई।
+
+दिन के अंत में भाव ₹704.80 रहा। यह उस दिन के Open और पिछले Close, दोनों से नीचे था। इसलिए शुरुआत Gap Up होने के बावजूद Candle Red बनी।
+
+इन दो उदाहरणों से किसी setup की success rate नहीं निकाली जा सकती। ये केवल Opening Gap और बाद की चाल का फर्क दिखाते हैं।
+
+## Gap प्रतिशत कैसे निकालें?
+
+Gap % = [(नया Open − पिछला Close) ÷ पिछला Close] × 100
+
+5 अक्टूबर का हिसाब: [(731.95 − 721.20) ÷ 721.20] × 100 = लगभग +1.49%
+
+Daily Change अलग है: उसमें नए Open की जगह उसी दिन का Close इस्तेमाल होता है। इसीलिए Gap % और दिन का अंतिम Change % अलग हो सकते हैं।
+
+## Opening Gap और Chart पर खाली जगह में फर्क
+
+हर Opening Gap के बाद दो Daily Candles के बीच खाली जगह बचना जरूरी नहीं।
+
+Daily ranges के बीच Up Gap तब बचता है जब नए Session का Low, पिछले Session के High से ऊपर हो। Down Gap में नया High, पिछले Low से नीचे रहता है।
+
+इस article के chart में Opening Gaps दिखाए गए हैं। दोनों उदाहरणों में दिन खत्म होने तक ranges overlap करती हैं। इन्हें बचा हुआ full-day price gap समझना गलत होगा।
+
+## क्या हर Gap भर जाता है?
+
+नहीं। Gap Fill की गारंटी या निश्चित समय नहीं होता।
+
+इस article में Opening Gap Fill का मतलब price का पिछले Close के स्तर तक वापस पहुँचना है। ऊपर के दोनों उदाहरणों में दिन की range ने उस स्तर को पार किया। लेकिन Daily OHLC से यह नहीं पता चलता कि ऐसा किस समय हुआ या उस समय कैसी Intraday Candle बनी।
+
+इसलिए Daily Chart से "सुबह इतने बजे reversal आया" जैसी कहानी नहीं बनानी चाहिए।
+
+## Chart पढ़ते समय ये चार बातें देखें
+
+1. **Reference सही रखें:** Open की तुलना पिछले Trading Session के Close से करें।
+2. **Candle colour समझें:** सामान्य setting में colour Open और Close का संबंध दिखाता है। कुछ platforms की setting अलग हो सकती है।
+3. **Context देखें:** Opening के बाद price कहाँ टिकता है, पास में कौन-से price levels हैं और Volume कैसा है?
+4. **Data की consistency जाँचें:** एक ही Exchange और adjustment basis रखें। Split या अन्य corporate action के आसपास raw prices भ्रामक लग सकते हैं।
+
+Opening Gap देखकर अकेले Buy या Sell का फैसला निकालना ठीक नहीं। Price के आगे के व्यवहार और अपने risk limits को भी समझना जरूरी है।
+
+यह लेख शिक्षा के लिए है; किसी शेयर को खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Green Candle के बावजूद शेयर नीचे क्यों](/post/green-candle-negative-day-hindi)
+- [Volume क्या है](/post/stock-market-volume-hindi)
+- [Moving Average क्या है](/post/moving-average-sma-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Gap Up क्या होता है?**
+जब नया Trading Session पिछले Session के Close से ऊपर खुलता है, उसे Gap Up Opening कहते हैं।
+
+**2. क्या Gap Down के बाद Green Candle बन सकती है?**
+हाँ। नीचे खुलने के बाद शेयर अपने Open से ऊपर बंद हो तो सामान्य Open-Close setting में Green Candle बनती है।
+
+**3. Gap प्रतिशत कैसे निकालते हैं?**
+नए Open में से पिछला Close घटाएँ, उसे पिछले Close से भाग दें और 100 से गुणा करें।
+
+**4. क्या हर Gap उसी दिन भर जाता है?**
+नहीं। Gap Fill की गारंटी या निश्चित समय नहीं होता।
+
+**5. क्या Gap Up एक Buy Signal है?**
+अकेला Gap Up भरोसेमंद Buy Signal नहीं है। Opening के बाद price behaviour, context और risk भी समझना जरूरी है।`,
+    author: "HoshiyarStock",
+    date: "2026-10-09",
+    readTime: 8,
+    cover: "/gap-up-gap-down-hindi-thumbnail.png",
+  },
+  {
     id: "p14",
     slug: "stock-market-volume-hindi",
     title: "Volume क्या है? Real Chart से Price और Volume का संबंध समझें",
