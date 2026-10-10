@@ -2,6 +2,124 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p17",
+    slug: "support-zone-breakdown-hindi",
+    title: "Support क्या है? Real Chart से Support Zone और Breakdown समझें",
+    category: "Market Gyaan",
+    tags: ["support zone", "support breakdown", "price action", "market gyaan", "technical analysis"],
+    excerpt: "Support पर आते ही शेयर ऊपर जाएगा, यह जरूरी नहीं। Real Chart से समझें कि पास-पास के Lows से Zone कैसे बनता है और उसके नीचे Close क्या बताता है।",
+    content: `"शेयर Support पर आ गया है, अब जरूर ऊपर जाएगा" — Chart सीखते समय यह सोच नुकसान करा सकती है।
+
+Support वह price area है जहाँ गिरावट पहले रुकी हो या जहाँ buying interest गिरावट को रोक सकता हो। लेकिन उस area को दोबारा छूने पर price ऊपर ही जाएगा, ऐसा जरूरी नहीं।
+
+इस article में HDFC Bank के वास्तविक Daily Chart से समझेंगे कि Support Zone कैसे चिन्हित करें और उसके टूटने का मतलब क्या है।
+
+## Support को सिर्फ एक Price क्यों न मानें?
+
+Market हर बार बिल्कुल एक ही भाव से वापस नहीं मुड़ता। कभी Low थोड़ा ऊपर बनता है, कभी थोड़ा नीचे।
+
+इसलिए पास-पास बने Lows को देखकर एक छोटा price area चिन्हित किया जा सकता है। इसे Support Zone कहेंगे। Zone की चौड़ाई चुनना analysis का हिस्सा है; सभी शेयरों के लिए एक ही रुपये या प्रतिशत का नियम लागू नहीं होता।
+
+## Real Chart: पास-पास बने तीन Low
+
+![HDFC Bank के 5-8 अक्टूबर 2026 के Daily Chart में ₹701-₹702 का संभावित Support Zone और नीचे Close](/support-zone-hdfc-real-chart.png)
+
+Chart में 5, 6 और 7 अक्टूबर के Low एक-दूसरे के करीब हैं। इन्हीं के आधार पर यहाँ ₹701-₹702 को संभावित short-term Support Zone माना गया है।
+
+यह हमारी शैक्षिक interpretation है, Exchange की घोषित Support Line नहीं। तीन दिनों का cluster लंबे समय के मजबूत Support का प्रमाण भी नहीं है।
+
+| तारीख | दिन का Low | दिन का Close |
+|---|---:|---:|
+| 5 अक्टूबर 2026 | ₹701.25 | ₹704.80 |
+| 6 अक्टूबर 2026 | ₹701.00 | ₹711.45 |
+| 7 अक्टूबर 2026 | ₹701.70 | ₹702.75 |
+| 8 अक्टूबर 2026 | ₹690.50 | ₹692.25 |
+
+## Step 1: Zone कहाँ से आया?
+
+पहले तीन Sessions के Lows में सबसे नीचे ₹701.00 और सबसे ऊपर ₹701.70 है।
+
+इन पास-पास के भावों को समेटकर सीखने के लिए ₹701-₹702 का area रखा गया है। Chart का सुनहरा band यही Zone दिखाता है।
+
+यहाँ Zone चुनने में 8 अक्टूबर की गिरावट का इस्तेमाल नहीं किया गया। पहले तीन Sessions के पूरा होने पर उपलब्ध जानकारी से यह area चिन्हित किया जा सकता था।
+
+## Step 2: क्या price हर बार जोरदार उछला?
+
+नहीं। पहले तीनों Sessions का Close Zone से ऊपर है, लेकिन recovery बराबर नहीं है।
+
+7 अक्टूबर का Close Zone की ऊपरी सीमा से केवल थोड़ा ऊपर रहा। इसलिए सिर्फ "तीन बार Support बचा" कहकर हर reaction को मजबूत bounce मानना गलत होगा।
+
+Daily Candle से उस दिन का Open, High, Low और Close पता चलता है। उससे प्रत्येक Intraday उतार-चढ़ाव या buyers की पहचान नहीं पता चलती।
+
+## Step 3: Support के नीचे Close का मतलब
+
+8 अक्टूबर को Low, Zone के नीचे गया और Close भी नीचे रहा।
+
+इस उदाहरण में price ने हमारे चिन्हित Support Zone को नीचे की तरफ पार किया और Session के अंत तक उसके ऊपर वापस नहीं आया। इसे इस Session का Support Breakdown कह सकते हैं।
+
+लेकिन इससे यह तय नहीं होता कि अगले दिन भी गिरावट होगी। यह Chart केवल 5-8 अक्टूबर का उदाहरण है; इससे बाद की पूरी trend का निष्कर्ष नहीं निकालना चाहिए।
+
+## Wick नीचे जाने और Close नीचे होने में फर्क
+
+| स्थिति | क्या जानकारी मिलती है? |
+|---|---|
+| Low नीचे गया, Close Zone से ऊपर रहा | दिन में नीचे जाने के बाद Closing तक recovery हुई |
+| Close Zone के अंदर रहा | Closing अभी चिन्हित area में है |
+| Close Zone से नीचे रहा | उस Session के अंत में price Zone के नीचे था |
+
+यह केवल Chart पढ़ने की तुलना है। कोई एक स्थिति अपने आप Buy या Sell का आदेश नहीं बनती।
+
+## Breakdown के बाद क्या देखें?
+
+**Price वापस Zone में आता है या नीचे रहता है?** वापसी होने पर शुरुआती Breakdown टिकाऊ नहीं भी हो सकता।
+
+**आप कौन-सा Timeframe देख रहे हैं?** इस उदाहरण में Daily Close है। इसे पाँच मिनट की Candle के Close से न मिलाएँ।
+
+**Volume कैसा है?** उसी Exchange और comparable पूरे Sessions का Volume देखें। हर Breakdown को बिना जाँचे "High Volume Breakdown" न कहें।
+
+**बड़ी तस्वीर कैसी है?** कुछ Sessions के छोटे cluster को Weekly या Monthly Support जैसा महत्व न दें। ज्यादा history से interpretation बदल सकती है।
+
+## Beginners की सामान्य गलतियाँ
+
+- Price Zone में आते ही निश्चित bounce मान लेना।
+- बाद का नतीजा देखकर अपनी Support Line बार-बार खिसकाना।
+- अधूरी Candle को final Close मान लेना।
+- एक Breakdown से निश्चित Target या success rate निकाल लेना।
+
+अभ्यास के लिए Chart का अगला हिस्सा छिपाएँ, उपलब्ध Candles से Zone mark करें और फिर आगे का परिणाम देखें। अपनी पहली marking और बाद का outcome दोनों लिखें।
+
+Support एक उपयोगी reference area है। उसके पास price क्या करता है, यह देखना उतना ही जरूरी है जितना उसे Chart पर चिन्हित करना।
+
+यह लेख शिक्षा के लिए है; किसी शेयर को खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Inside Bar क्या है](/post/inside-bar-candlestick-pattern-hindi)
+- [Volume क्या है](/post/stock-market-volume-hindi)
+- [Gap Up और Gap Down समझें](/post/gap-up-gap-down-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Stock Market में Support क्या है?**
+Support वह price area है जहाँ गिरावट रुक सकती है या पहले रुकी हो। वहाँ से bounce की गारंटी नहीं होती।
+
+**2. Support Line और Support Zone में क्या फर्क है?**
+Line एक price level दर्शाती है, जबकि Zone पास-पास के price levels का एक area दिखाता है।
+
+**3. क्या Support टूटने के बाद शेयर हमेशा गिरता है?**
+नहीं। Price वापस Zone में या उसके ऊपर आ सकता है। Breakdown आगे की दिशा की गारंटी नहीं है।
+
+**4. क्या Wick का Support के नीचे जाना और Close नीचे होना समान है?**
+नहीं। Wick दिन में नीचे गए price को दिखाती है; Close बताता है कि चुना हुआ Session कहाँ समाप्त हुआ।
+
+**5. क्या तीन पास-पास Low मजबूत Support साबित करते हैं?**
+नहीं। वे देखने योग्य area बताते हैं, लेकिन उसकी उपयोगिता जानने के लिए broader history, timeframe और आगे का price behaviour भी देखें।`,
+    author: "HoshiyarStock",
+    date: "2026-10-10",
+    readTime: 8,
+    cover: "/support-zone-breakdown-hindi-thumbnail.png",
+  },
+  {
     id: "p16",
     slug: "inside-bar-candlestick-pattern-hindi",
     title: "Inside Bar क्या है? Real Chart से Mother Candle और Breakdown समझें",
