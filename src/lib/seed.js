@@ -2,6 +2,130 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p16",
+    slug: "inside-bar-candlestick-pattern-hindi",
+    title: "Inside Bar क्या है? Real Chart से Mother Candle और Breakdown समझें",
+    category: "Candle Patterns",
+    tags: ["inside bar", "mother candle", "candlestick patterns", "price action", "breakout", "false breakout"],
+    excerpt: "Inside Bar पहचानने के लिए सिर्फ Body नहीं, पूरी Candle की Range देखें। HDFC Bank के Real Chart से Mother Candle और अगले दिन का Breakdown समझें।",
+    content: `कभी Chart में एक Candle के बाद ऐसी Candle बनती है, जिसका पूरा High-Low पिछली Candle के अंदर रहता है। यही Inside Bar की बुनियादी पहचान है।
+
+लेकिन छोटी Candle दिखते ही बड़ी तेजी या गिरावट मान लेना सही नहीं। पहले उसकी पूरी Range जाँचें, फिर देखें कि price उस Range से बाहर कैसे निकलता है।
+
+## Inside Bar की पहचान कैसे करें?
+
+इस article में हम Strict Inside Bar का नियम इस्तेमाल करेंगे:
+
+- नई Candle का High, पिछली Candle के High से नीचे हो।
+- नई Candle का Low, पिछली Candle के Low से ऊपर हो।
+
+पिछली Candle को Mother Candle या Mother Bar कहते हैं। उसके बाद बनने वाली अंदर की Candle, Inside Bar है।
+
+सिर्फ Body अंदर होना काफी नहीं है। ऊपर और नीचे की Wicks भी Mother Candle की High-Low Range के भीतर होनी चाहिए।
+
+कुछ traders बराबर High या Low को भी स्वीकार करते हैं। इसलिए Scanner या Chart Indicator इस्तेमाल करते समय उसका नियम देख लें।
+
+## Real Chart: HDFC Bank में Inside Bar
+
+![HDFC Bank के 6-8 अक्टूबर 2026 के Daily Chart में Mother Candle, Inside Bar और अगले दिन का Breakdown](/inside-bar-hdfc-real-chart.png)
+
+यह Chart वास्तविक historical OHLC data से बनाया गया है। हर Candle एक पूरे Trading Session को दिखाती है। पीली dashed lines Mother Candle की सीमा हैं।
+
+| तारीख | Open | High | Low | Close | भूमिका |
+|---|---|---:|---:|---:|---|
+| 6 अक्टूबर 2026 | ₹705.60 | ₹714.70 | ₹701.00 | ₹711.45 | Mother Candle |
+| 7 अक्टूबर 2026 | ₹708.55 | ₹711.00 | ₹701.70 | ₹702.75 | Inside Bar |
+| 8 अक्टूबर 2026 | ₹704.05 | ₹705.80 | ₹690.50 | ₹692.25 | अगले दिन का Breakdown |
+
+## Step 1: Mother Candle की सीमा तय करें
+
+6 अक्टूबर की Candle का High ₹714.70 और Low ₹701.00 था।
+
+इसलिए उसकी पूरी Range हुई: ₹714.70 − ₹701.00 = ₹13.70
+
+Chart में इन दोनों levels के बीच हल्का shaded area दिया गया है।
+
+## Step 2: अगली Candle की Wicks जाँचें
+
+7 अक्टूबर का High ₹711.00 था, जो Mother High से नीचे है। उसका Low ₹701.70 था, जो Mother Low से ऊपर है।
+
+दोनों शर्तें पूरी हुईं, इसलिए यह Strict Inside Bar है।
+
+उसकी Range: ₹711.00 − ₹701.70 = ₹9.30
+
+पिछले Session की तुलना में High-Low Range छोटी हुई। इसका मतलब उस Session का price movement सीमित रहा; अगली दिशा इससे निश्चित नहीं होती।
+
+## Step 3: अगले Session में क्या हुआ?
+
+8 अक्टूबर को price Mother Candle के Low के नीचे गया और दिन का Close भी उसी सीमा के नीचे रहा। इस ऐतिहासिक उदाहरण में नीचे की तरफ Range Break हुआ।
+
+लेकिन 7 अक्टूबर के Close पर अगले दिन का नतीजा मालूम नहीं था। इसलिए इसे "पहले से पक्का Sell Signal" कहना गलत होगा।
+
+यह एक उदाहरण है, किसी strategy की success rate या भविष्य के profit का प्रमाण नहीं।
+
+## Inside Bar के बाद कौन-से levels देखें?
+
+इस explanation में reference Mother Candle की पूरी Range है:
+
+| आगे की स्थिति | कैसे पढ़ें |
+|---|---|
+| Price Mother High से ऊपर जाता है | ऊपर की सीमा पार हुई; देखें move टिकता है या नहीं |
+| Price Mother Low से नीचे जाता है | नीचे की सीमा पार हुई; देखें move टिकता है या नहीं |
+| Price दोनों सीमाओं के अंदर रहता है | Mother Range अभी नहीं टूटी |
+
+Inside Bar का अपना High-Low और Mother Candle का High-Low अलग levels हैं। इन्हें मिला देने से Breakout का अर्थ बदल सकता है।
+
+## False Breakout क्या होता है?
+
+कभी price सीमा के बाहर जाता है, फिर वापस Range में लौट आता है। इसे False Breakout कहा जा सकता है।
+
+Candle Close का इंतजार करने से पता चलता है कि चुना हुआ Session बाहर बंद हुआ या नहीं। फिर भी बाद के Session में reversal हो सकता है। Close मिलने से success की guarantee नहीं बनती।
+
+## Beginners की चार सामान्य गलतियाँ
+
+1. केवल Candle की Body देखकर Inside Bar मान लेना।
+2. Red Inside Bar को निश्चित गिरावट और Green Inside Bar को निश्चित तेजी समझना।
+3. अधूरी Candle पर pattern final मान लेना — बंद होने से पहले उसका High या Low बदल सकता है।
+4. एक सफल उदाहरण देखकर हर Inside Bar से वही परिणाम उम्मीद करना।
+
+## अभ्यास कैसे करें?
+
+अपने Chart पर पहले Mother Candle का High-Low mark करें। उसके बाद अगली पूरी Candle के extremes की तुलना करें। फिर आने वाले Sessions का परिणाम अलग लिखें।
+
+ऐसा record बनाते समय सफल और असफल, दोनों उदाहरण रखें। तभी आप पहचानने और परिणाम देखकर कहानी बनाने का फर्क समझ पाएँगे।
+
+Inside Bar मुख्य रूप से Range के सिकुड़ने की पहचान है। इसे समझने के लिए Candle का रंग जितना दिखता है, उससे ज्यादा जरूरी उसके High और Low हैं।
+
+यह लेख केवल शिक्षा के लिए है; किसी शेयर को खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Gap Up और Gap Down क्या हैं](/post/gap-up-gap-down-hindi)
+- [Volume क्या है](/post/stock-market-volume-hindi)
+- [Moving Average क्या है](/post/moving-average-sma-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Inside Bar क्या होता है?**
+Strict Inside Bar में नई Candle का High पिछली Candle के High से नीचे और Low पिछली Candle के Low से ऊपर रहता है।
+
+**2. Mother Candle किसे कहते हैं?**
+Inside Bar के ठीक पहले वाली Candle को Mother Candle कहते हैं, जिसकी High-Low Range के भीतर Inside Bar बनता है।
+
+**3. क्या Inside Bar हमेशा Bullish होता है?**
+नहीं। Pattern अकेले अगली दिशा तय नहीं करता। Price ऊपर या नीचे निकल सकता है, या Range में रह सकता है।
+
+**4. क्या केवल Body अंदर होने से Inside Bar बन जाता है?**
+नहीं। इस article के Strict नियम में पूरी High-Low Range, Wicks सहित, पिछली Candle के भीतर होनी चाहिए।
+
+**5. क्या Candle Close के बाद False Breakout का खतरा खत्म हो जाता है?**
+नहीं। Range के बाहर Close मिलने के बाद भी आगे price वापस लौट सकता है।`,
+    author: "HoshiyarStock",
+    date: "2026-10-10",
+    readTime: 8,
+    cover: "/inside-bar-pattern-hindi-thumbnail.png",
+  },
+  {
     id: "p15",
     slug: "gap-up-gap-down-hindi",
     title: "Gap Up और Gap Down क्या हैं? Real Chart से आसान भाषा में समझें",
