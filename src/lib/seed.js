@@ -2,6 +2,132 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p18",
+    slug: "spinning-top-candlestick-pattern-hindi",
+    title: "Spinning Top Candle क्या है? SBI के Real Chart से आसान हिंदी में समझें",
+    category: "Candle Patterns",
+    tags: ["spinning top", "candlestick patterns", "doji", "price action", "stock market basics"],
+    excerpt: "छोटी Green Candle हमेशा तेजी का संकेत नहीं होती। SBI के Real Chart से Spinning Top की Body, Wicks और अगले Session का व्यवहार समझें।",
+    content: `Chart में छोटी Green Candle दिखी तो क्या अगला दिन भी तेजी वाला होगा? जरूरी नहीं। कभी छोटी Body के साथ ऊपर और नीचे दोनों Wicks होती हैं। ऐसी Candle को पढ़ने के लिए केवल उसका रंग देखना काफी नहीं है।
+
+Spinning Top में Open और Close का अंतर छोटा होता है, लेकिन price दोनों तरफ गया होता है। Technical Analysis में इसे अक्सर Indecision, यानी दिशा को लेकर अनिश्चितता, की तरह पढ़ा जाता है।
+
+## Spinning Top की पहचान
+
+इस article में हम तीन बातें देखेंगे:
+
+- पूरे High-Low Range की तुलना में छोटी Real Body।
+- Body के ऊपर स्पष्ट Upper Wick।
+- Body के नीचे स्पष्ट Lower Wick।
+
+यहाँ चुने गए उदाहरण में दोनों Wicks, Body से लंबी हैं। उनका बिल्कुल बराबर होना जरूरी नहीं है। अलग-अलग scanners के numerical thresholds अलग हो सकते हैं; केवल एक percentage को universal rule न मानें।
+
+## SBI का Real Chart
+
+![SBI के 22-29 सितंबर 2026 की Daily Candles में 25 सितंबर की Spinning Top और उसका OHLC detail](/spinning-top-sbi-real-chart.png)
+
+बाएँ हिस्से में 22-29 सितंबर 2026 की Daily Candles हैं। Highlight की गई Candle 25 सितंबर की है। दाएँ हिस्से में उसी Candle को बड़ा करके दिखाया गया है।
+
+दोनों panels की price scales अलग हैं ताकि Wicks साफ दिखें। कीमतें या Candle के अंदर के अनुपात नहीं बदले गए हैं।
+
+| 25 सितंबर 2026, SBI NSE | Price |
+|---|---:|
+| Open | ₹980.80 |
+| High | ₹985.70 |
+| Low | ₹977.00 |
+| Close | ₹983.00 |
+
+## Body और Wicks का हिसाब
+
+किसी भी सामान्य Candle के लिए:
+
+- Body = |Close − Open|
+- Upper Wick = High − Open और Close में जो बड़ा है
+- Lower Wick = Open और Close में जो छोटा है − Low
+
+इस Green Candle में:
+
+| हिस्सा | Calculation | लंबाई |
+|---|---|---:|
+| Body | 983.00 − 980.80 | ₹2.20 |
+| Upper Wick | 985.70 − 983.00 | ₹2.70 |
+| Lower Wick | 980.80 − 977.00 | ₹3.80 |
+| पूरी Range | 985.70 − 977.00 | ₹8.70 |
+
+Body पूरी Range की लगभग 25.3% है। यह इस Candle का माप है, हर Spinning Top के लिए अनिवार्य cutoff नहीं।
+
+## छोटी Body का मतलब कम हलचल नहीं
+
+इस उदाहरण में Open से Close का अंतर सिर्फ ₹2.20 रहा, लेकिन दिन के High और Low का अंतर ₹8.70 था।
+
+यानी price ने दोनों तरफ का area छुआ, फिर Open के अपेक्षाकृत पास Close किया। छोटी Body देखकर पूरे Session को शांत मान लेना गलत हो सकता है।
+
+Daily OHLC से यह नहीं पता चलता कि पहले High बना या Low। इसलिए इस Chart से दिन के अंदर घटनाओं का निश्चित क्रम नहीं बताया जा सकता।
+
+## Green होने पर भी अगला दिन गिर सकता है
+
+यह Candle Green है क्योंकि Close, Open से ऊपर है। लेकिन अगले Trading Session, 28 सितंबर को SBI का Close ₹962.00 रहा — Spinning Top के Low से भी नीचे।
+
+इससे समझ आता है कि Green Spinning Top अपने आप Buy Signal नहीं है। बाद का परिणाम देखने के बाद यह कहना भी ठीक नहीं कि इसी Candle ने गिरावट पक्की कर दी थी।
+
+एक उदाहरण से pattern की success rate, निश्चित direction या 50-50 probability नहीं निकाली जा सकती।
+
+## Spinning Top और Doji में फर्क
+
+| बात | Spinning Top | Doji |
+|---|---|---|
+| Open-Close संबंध | पास होते हैं, छोटी Body दिखती है | समान या बेहद करीब होते हैं |
+| पहचान का केंद्र | छोटी Body और दोनों तरफ Wicks | बहुत छोटी या लगभग शून्य Body |
+| अगली दिशा की गारंटी | नहीं | नहीं |
+
+दोनों के बीच सीमा Chart scale और इस्तेमाल की गई definition पर निर्भर कर सकती है। Pattern का नाम लगाने से पहले actual OHLC देखें।
+
+## इसके बाद क्या देखें?
+
+पहले आसपास की price movement देखें। क्या Candle तेजी के बाद बनी, गिरावट के बाद या एक सीमित Range के बीच?
+
+फिर उसका High और Low mark करें। अगली completed Candle उन levels के संबंध में कहाँ Close करती है, उसे अलग observation की तरह लिखें। किसी level का टूटना भी आगे की चाल की guarantee नहीं है।
+
+Volume को comparable Sessions से जाँचें। केवल लंबी Wick देखकर institutional buying या selling घोषित न करें।
+
+## Beginners की तीन गलतियाँ
+
+1. हर छोटी Candle को Spinning Top कहना, बिना Wicks जाँचे।
+2. Green रंग को निश्चित तेजी और Red को निश्चित गिरावट मानना।
+3. अधूरी Candle पर pattern final कर देना — Close होने से पहले उसका आकार बदल सकता है।
+
+अभ्यास के लिए दस पुराने उदाहरण खोजें। हर बार Body, दोनों Wicks और अगली दो Candles का outcome लिखें। सफल और असफल, दोनों तरह के उदाहरण रखें।
+
+यह लेख केवल शिक्षा के लिए है; किसी शेयर को खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Doji Candle क्या है](/post/doji-candle-pattern-hindi)
+- [Inside Bar कैसे पहचानें](/post/inside-bar-candlestick-pattern-hindi)
+- [Support Zone कैसे समझें](/post/support-zone-breakdown-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Spinning Top Candle क्या है?**
+यह छोटी Real Body और ऊपर व नीचे स्पष्ट Wicks वाली Candle है, जिसे अक्सर market indecision की तरह पढ़ा जाता है।
+
+**2. क्या Green Spinning Top Buy Signal है?**
+अपने आप नहीं। उसका रंग Open और Close का संबंध बताता है, अगली दिशा निश्चित नहीं करता।
+
+**3. क्या दोनों Wicks बिल्कुल बराबर होनी चाहिए?**
+जरूरी नहीं। इस article के उदाहरण में दोनों Wicks Body से लंबी हैं। Scanner की specific definition अलग हो सकती है।
+
+**4. Spinning Top और Doji में क्या फर्क है?**
+Spinning Top में छोटी लेकिन दिखाई देने वाली Body होती है। Doji में Open और Close समान या बहुत करीब होते हैं।
+
+**5. क्या छोटी Body का मतलब कम volatility है?**
+जरूरी नहीं। Body छोटी होने के बावजूद High-Low Range बड़ी हो सकती है।`,
+    author: "HoshiyarStock",
+    date: "2026-10-14",
+    readTime: 8,
+    cover: "/spinning-top-candle-hindi-thumbnail.png",
+  },
+  {
     id: "p17",
     slug: "support-zone-breakdown-hindi",
     title: "Support क्या है? Real Chart से Support Zone और Breakdown समझें",
