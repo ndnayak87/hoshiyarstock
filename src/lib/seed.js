@@ -2,6 +2,134 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p19",
+    slug: "outside-bar-vs-engulfing-hindi",
+    title: "Outside Bar क्या है? Engulfing से फर्क Real Chart पर समझें",
+    category: "Candle Patterns",
+    tags: ["outside bar", "engulfing", "inside bar", "candlestick patterns", "price action"],
+    excerpt: "Candle ने पिछले High और Low दोनों पार किए, फिर भी Engulfing क्यों नहीं बना? SBI के वास्तविक Chart से Range और Body का फर्क जानें।",
+    content: `एक Candle ने पिछली Candle का High भी पार किया और Low भी तोड़ दिया। क्या इसे तुरंत Engulfing कह देंगे?
+
+नहीं। Outside Bar पहचानते समय पूरी High-Low Range देखी जाती है। Engulfing की प्रचलित candlestick definition में मुख्य तुलना Real Bodies की होती है। इसलिए एक pattern बन सकता है, जबकि दूसरा न बने।
+
+## Outside Bar की पहचान
+
+इस article में Strict Outside Bar का नियम है:
+
+- नई Candle का High > पिछली Candle का High
+- नई Candle का Low < पिछली Candle का Low
+
+दोनों शर्तें जरूरी हैं। केवल नया High या केवल नया Low बनाने से यह pattern पूरा नहीं होता।
+
+Body का बड़ा होना जरूरी नहीं। लंबी Wicks के साथ छोटी Body वाली Candle भी Outside Bar हो सकती है। किसी scanner में बराबर High-Low की handling अलग हो सकती है, इसलिए उसका नियम देखें।
+
+## SBI के Real Chart से समझें
+
+![SBI के 6-9 अक्टूबर 2026 के Daily Chart में 7 अक्टूबर का Outside Bar और अलग Candle Bodies](/outside-bar-sbi-real-chart.png)
+
+Chart में पीली dashed lines 6 अक्टूबर का High और Low दिखाती हैं। अगली Candle दोनों सीमाओं के बाहर जाती है।
+
+| जानकारी | 6 अक्टूबर 2026 | 7 अक्टूबर 2026 |
+|---|---:|---:|
+| Open | ₹962.10 | ₹955.00 |
+| High | ₹963.65 | ₹966.00 |
+| Low | ₹949.85 | ₹945.60 |
+| Close | ₹958.75 | ₹954.00 |
+
+## Step 1: High और Low की तुलना
+
+7 अक्टूबर का High ₹966.00 था, जो पिछले High ₹963.65 से ऊपर है।
+
+उसी दिन का Low ₹945.60 था, जो पिछले Low ₹949.85 से नीचे है।
+
+दोनों शर्तें पूरी हुईं। इसलिए 7 अक्टूबर की Candle, 6 अक्टूबर के मुकाबले Strict Outside Bar है।
+
+यहाँ केवल पिछले Session से तुलना की गई है। इससे यह साबित नहीं होता कि कई हफ्तों की किसी बड़ी Range का भी Breakout हुआ।
+
+## Step 2: Range और Body अलग-अलग निकालें
+
+Range = High − Low
+Body = |Close − Open|
+
+| माप | 6 अक्टूबर | 7 अक्टूबर |
+|---|---:|---:|
+| पूरी Range | ₹13.80 | ₹20.40 |
+| Real Body | ₹3.35 | ₹1.00 |
+
+दूसरी Candle की पूरी Range बढ़ी, जबकि Body छोटी हो गई। इसलिए Chart पर "बड़ी Candle" बोलते समय स्पष्ट करें कि आप Range की बात कर रहे हैं या Body की।
+
+## यह Engulfing क्यों नहीं है?
+
+6 अक्टूबर की Body ₹958.75 से ₹962.10 के बीच है।
+
+7 अक्टूबर की Body ₹954.00 से ₹955.00 के बीच है।
+
+दूसरी Body ने पहली Body को ढका ही नहीं। दोनों Candles Red भी हैं। इसलिए यह जोड़ी सामान्य Bullish या Bearish Engulfing की संरचना नहीं बनाती।
+
+Engulfing पढ़ते समय Body coverage के साथ candle colours और prior trend का context भी देखा जाता है। केवल Wicks से पूरी Candle cover होना पर्याप्त नहीं है।
+
+## Inside Bar, Outside Bar और Engulfing
+
+| Pattern | मुख्य जाँच |
+|---|---|
+| Inside Bar | नई पूरी Range, पिछली Range के भीतर |
+| Outside Bar | नया High ऊपर और नया Low नीचे |
+| Engulfing | नई Body पिछली Body को ढकती है; colours और trend का context भी देखें |
+
+किसी जोड़ी में Outside Bar और Engulfing दोनों बन सकते हैं। लेकिन दोनों नाम एक ही नियम का वर्णन नहीं करते।
+
+## आगे price ने क्या किया?
+
+इस उदाहरण में 8 अक्टूबर को SBI का Close ₹940.00 रहा, जो Outside Bar के Low से नीचे था। फिर 9 अक्टूबर को Close ₹959.10 पर वापस आया, यानी उस Outside Bar की Range के भीतर।
+
+इसलिए केवल अगले दिन की गिरावट दिखाकर यह कहना अधूरा होगा कि pattern के बाद लगातार गिरावट ही हुई। हमने Chart में दोनों बाद के Sessions रखे हैं।
+
+यह एक historical example है। इससे कोई success rate, निश्चित Target या भविष्य की direction साबित नहीं होती।
+
+## Daily Candle क्या नहीं बताती?
+
+Outside Bar से यह पता चलता है कि Session में पिछले High के ऊपर और पिछले Low के नीचे prices दर्ज हुए।
+
+लेकिन केवल Daily OHLC से यह नहीं पता चलता कि पहले High टूटा या Low। इसलिए Intraday data के बिना "पहले buyers फँसे, फिर sellers ने control लिया" जैसी निश्चित कहानी न बनाएँ।
+
+## Beginners के लिए अभ्यास
+
+दो completed Candles चुनें। पहले उनके High-Low compare करें, फिर अलग से Open-Close की Body compare करें।
+
+Pattern मिलने के बाद पिछला trend, पास के Support-Resistance और आगे के Sessions देखें। केवल Red या Green colour से अगली दिशा तय न करें।
+
+सबसे उपयोगी आदत यही है: Range और Body को अलग मापें, फिर pattern का नाम दें।
+
+यह लेख शिक्षा के लिए है; किसी शेयर को खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Inside Bar क्या है](/post/inside-bar-candlestick-pattern-hindi)
+- [Spinning Top Candle कैसे पढ़ें](/post/spinning-top-candlestick-pattern-hindi)
+- [Support Zone कैसे समझें](/post/support-zone-breakdown-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Outside Bar क्या होता है?**
+Strict definition में नई Candle का High पिछले High से ऊपर और Low पिछले Low से नीचे होता है।
+
+**2. क्या हर Outside Bar Engulfing होता है?**
+नहीं। Outside Bar पूरी Range की तुलना है, जबकि Engulfing की प्रचलित definition में Real Bodies और दूसरे pattern rules देखे जाते हैं।
+
+**3. क्या छोटी Body वाली Candle Outside Bar बन सकती है?**
+हाँ। यदि उसका High और Low पिछली Candle के दोनों extremes को पार करें तो छोटी Body के बावजूद Outside Bar बन सकता है।
+
+**4. Outside Bar और Inside Bar में क्या फर्क है?**
+Inside Bar की पूरी Range पिछली Range के भीतर होती है; Outside Bar दोनों तरफ उससे बाहर जाती है।
+
+**5. क्या Red Outside Bar निश्चित गिरावट बताता है?**
+नहीं। Colour अकेले अगली direction की गारंटी नहीं देता।`,
+    author: "HoshiyarStock",
+    date: "2026-10-14",
+    readTime: 8,
+    cover: "/outside-bar-vs-engulfing-hindi-thumbnail.png",
+  },
+  {
     id: "p18",
     slug: "spinning-top-candlestick-pattern-hindi",
     title: "Spinning Top Candle क्या है? SBI के Real Chart से आसान हिंदी में समझें",
