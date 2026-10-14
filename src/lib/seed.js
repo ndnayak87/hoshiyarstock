@@ -2,6 +2,96 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p20",
+    slug: "daily-vs-weekly-candlestick-hindi",
+    title: "Daily vs Weekly Candlestick: एक ही शेयर का Chart अलग क्यों दिखता है?",
+    category: "Basics",
+    tags: ["candlestick", "timeframe", "daily chart", "weekly chart", "stock market basics", "sbi"],
+    excerpt: "SBI के वास्तविक data से सीखें कि पाँच Daily candles मिलकर एक Weekly candle कैसे बनाती हैं और Timeframe बदलने पर Chart अलग क्यों दिखता है।",
+    content: `कभी Daily Chart में कई लाल candles दिखती हैं, लेकिन Weekly Chart खोलने पर उसी सप्ताह की candle हरी मिलती है। ऐसा कैसे हो सकता है?
+
+इसका जवाब है **Timeframe**। Candle का रंग उस अवधि के Open और Close की तुलना से बनता है। Daily candles की गिनती से Weekly candle का रंग तय नहीं होता। आइए SBI के वास्तविक historical data से समझें।
+
+## Timeframe का मतलब क्या है?
+
+Timeframe बताता है कि एक candle कितनी अवधि की जानकारी दिखा रही है। Daily Chart की हर candle एक trading session और Weekly Chart की हर candle एक trading week का Open, High, Low और Close दिखाती है।
+
+Weekly Chart में सामान्य सप्ताह के पाँच sessions एक candle में समा सकते हैं। छुट्टी वाले सप्ताह में sessions कम भी हो सकते हैं। यहाँ standard Candlestick और Open-Close colour setting इस्तेमाल हुई है।
+
+## Real Chart: पाँच Daily candles से एक Weekly candle
+
+![SBI के 5-9 October 2026 के पाँच Daily candles और उन्हीं से बनी Weekly candle का Real Chart](/daily-vs-weekly-sbi-real-chart.png)
+
+यह Chart SBI, NSE:SBIN के 5-9 October 2026 के historical OHLC data से बनाया गया है। बाईं तरफ Daily candles हैं। दाईं तरफ उसी data से निकाली गई Weekly candle है। दोनों panels में price scale समान है।
+
+| तारीख | Open ₹ | High ₹ | Low ₹ | Close ₹ |
+|---|---:|---:|---:|---:|
+| 5 October | 959.00 | 969.45 | 956.00 | 958.00 |
+| 6 October | 962.10 | 963.65 | 949.85 | 958.75 |
+| 7 October | 955.00 | 966.00 | 945.60 | 954.00 |
+| 8 October | 953.90 | 953.90 | 937.50 | 940.00 |
+| 9 October | 942.00 | 959.90 | 938.10 | 959.10 |
+
+## Weekly Candle कैसे बनती है?
+
+- Weekly Open = सप्ताह के पहले trading session का Open।
+- Weekly High = सभी sessions के High में सबसे बड़ा मूल्य।
+- Weekly Low = सभी sessions के Low में सबसे छोटा मूल्य।
+- Weekly Close = अंतिम trading session का Close।
+
+इस उदाहरण में Weekly Open ₹959.00, High ₹969.45, Low ₹937.50 और Close ₹959.10 है। यह Daily prices का average नहीं है।
+
+## चार लाल candles के बावजूद Weekly Candle हरी क्यों?
+
+5, 6, 7 और 8 October को Close उस दिन के Open से नीचे था। इसलिए चारों Daily candles लाल हैं। 9 October की candle हरी है।
+
+लेकिन Weekly candle में तुलना ₹959.00 के शुरुआती Open और ₹959.10 के अंतिम Close की होती है। Close केवल ₹0.10 ऊपर है, इसलिए Weekly candle हल्की हरी और उसकी body बेहद छोटी है।
+
+इसे बड़ी तेजी समझना गलत होगा। ₹31.95 की पूरे सप्ताह की range के मुकाबले body केवल ₹0.10 है। Candle का हरा रंग और मजबूत bullish movement एक ही बात नहीं हैं।
+
+## Daily और Weekly Chart कौन-सी जानकारी देते हैं?
+
+Daily Chart इस सप्ताह के भीतर गिरावट और अंतिम दिन की recovery अलग-अलग दिखाता है। Weekly candle पूरे सप्ताह का range और शुरुआत से अंत तक का छोटा अंतर दिखाती है।
+
+केवल Weekly candle देखकर यह पता नहीं चलता कि कौन-सा दिन गिरा या कब recovery हुई। उसके लिए छोटे Timeframe का data देखना पड़ता है। इसी तरह एक हरी Daily candle अपने आप पूरे बड़े trend के बदलने का प्रमाण नहीं है।
+
+## Chart पढ़ते समय तीन गलतियों से बचें
+
+1. Weekly candle का रंग Daily लाल-हरी candles गिनकर तय न करें। असली तुलना Weekly Open और Close की है।
+2. बुधवार को दिख रही चालू Weekly candle को final न मानें। सप्ताह के बाकी sessions में उसका High, Low और Close बदल सकता है।
+3. अलग Timeframes पर Moving Average की अवधि एक न समझें। Daily Chart का 20-period SMA बीस daily candles और Weekly Chart का 20-period SMA बीस weekly candles पर बनता है।
+
+Chart देखते समय पहले symbol, Timeframe और candle पूरी हुई है या नहीं, यह जाँचें। फिर उसके Open, High, Low और Close पढ़ें। इससे एक ही शेयर के अलग Charts को समझना आसान होता है।
+
+यह उदाहरण केवल शिक्षा के लिए है, SBI में खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Moving Average क्या है](/post/moving-average-sma-hindi)
+- [Spinning Top Candle](/post/spinning-top-candlestick-pattern-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Daily और Weekly Candlestick में क्या फर्क है?**
+Daily candle एक trading session का OHLC दिखाती है। Weekly candle पूरे trading week का OHLC दिखाती है।
+
+**2. Weekly candle कैसे बनती है?**
+पहले session का Open, पूरे सप्ताह का सबसे ऊँचा High, सबसे नीचा Low और अंतिम session का Close मिलकर Weekly candle बनाते हैं।
+
+**3. क्या अधिक Daily candles लाल हों तो Weekly candle भी लाल होगी?**
+जरूरी नहीं। Weekly candle का रंग उसके अपने Open और Close की तुलना से तय होता है, Daily candle colours की गिनती से नहीं।
+
+**4. क्या Weekly Chart में हमेशा पाँच Daily candles शामिल होती हैं?**
+नहीं। Trading holidays के कारण किसी सप्ताह sessions कम हो सकते हैं।
+
+**5. क्या Daily और Weekly Chart का 20-period SMA एक जैसा है?**
+नहीं। Daily पर वह बीस daily candles और Weekly पर बीस weekly candles के closing prices का average है।`,
+    author: "HoshiyarStock",
+    date: "2026-10-14",
+    readTime: 8,
+    cover: "/daily-vs-weekly-candlestick-hindi-thumbnail.png",
+  },
+  {
     id: "p19",
     slug: "outside-bar-vs-engulfing-hindi",
     title: "Outside Bar क्या है? Engulfing से फर्क Real Chart पर समझें",
