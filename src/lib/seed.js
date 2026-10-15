@@ -2,6 +2,100 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p21",
+    slug: "resistance-false-breakout-hindi",
+    title: "Resistance Breakout के बाद Price क्यों गिरता है? Real Chart से समझें",
+    category: "Market Gyaan",
+    tags: ["resistance", "breakout", "false breakout", "price action", "market gyaan", "sbi"],
+    excerpt: "SBI के historical chart से समझें कि Resistance के ऊपर High बनना, ऊपर Close मिलना और तेजी का टिकना अलग बातें क्यों हैं।",
+    content: `Price पुराने Resistance के ऊपर निकल जाए तो क्या तेजी पक्की हो जाती है? नहीं। कभी Price दिन के बीच ऊपर जाता है और Close तक वापस आ जाता है। कभी Close भी Resistance के ऊपर मिलता है, लेकिन अगले session में गिरावट आ जाती है।
+
+SBI के Real Chart में दोनों स्थितियाँ मिलती हैं। इनका फर्क समझना जरूरी है, क्योंकि "Level पार हुआ" और "Price ऊपर टिक गया" अलग बातें हैं।
+
+## Resistance क्या होता है?
+
+Resistance वह price area है जहाँ ऊपर बढ़ते भाव को पहले रुकावट मिली हो। Technical analysis में इसे supply और demand के संदर्भ में पढ़ा जाता है। लेकिन Chart पर दिखाई देने वाला यह area कोई स्थायी दीवार नहीं होता।
+
+एकदम एक रुपये या एक tick की line के बजाय पास-पास के highs को zone मानना उपयोगी हो सकता है। Zone कहाँ बनेगा, इसमें analyst का judgment और चुना हुआ Timeframe शामिल रहता है।
+
+## Real Chart में Resistance कैसे चुना?
+
+![SBI के 19 August से 2 September 2026 के Daily Chart में Resistance zone और Failed Breakout](/resistance-false-breakout-sbi-real-chart.png)
+
+SBI के 19, 20 और 21 August 2026 के High क्रमशः ₹1,054.80, ₹1,052.90 और ₹1,054.70 थे। तीनों sessions के Close इन highs से नीचे रहे।
+
+इन्हीं शुरुआती observations के आधार पर Chart में लगभग ₹1,052-₹1,055 का संभावित short-term Resistance zone चुना गया है। यह लेख का educational reference है; इसे मजबूत long-term Resistance का प्रमाण न समझें।
+
+## पहली स्थिति: High ऊपर, लेकिन Close ऊपर नहीं
+
+26 August को SBI का High ₹1,062.30 तक पहुँचा, लेकिन Close ₹1,052.00 रहा। Price zone के ऊपर गया था, मगर Daily Close उसकी ऊपरी सीमा ₹1,055 से ऊपर नहीं मिला।
+
+सिर्फ दिन का High देखकर इसे टिकाऊ breakout मान लेना जल्दबाजी होती। यहाँ upper wick उस दिन के ऊँचे भाव और Close का अंतर दिखाती है। उससे किसी खास संस्था की selling या manipulation साबित नहीं होता।
+
+## दूसरी स्थिति: Close ऊपर मिला, फिर भी तेजी नहीं टिकी
+
+31 August का Close ₹1,060.00 था — चुने हुए zone के ऊपर। लेकिन 1 September को Open ₹1,051.30 और Close ₹1,034.50 रहा। 2 September का Close और नीचे ₹1,020.90 हुआ।
+
+| तारीख | क्या हुआ? | कैसे पढ़ें? |
+|---|---|---|
+| 26 August | High ₹1,062.30; Close ₹1,052.00 | Zone के ऊपर intraday move, ऊपर Close नहीं |
+| 31 August | Close ₹1,060.00 | Zone के ऊपर Daily Close |
+| 1 September | Close ₹1,034.50 | अगले session में zone के नीचे वापसी |
+| 2 September | Close ₹1,020.90 | गिरावट आगे भी जारी |
+
+इस चुने हुए zone और Daily Timeframe के संदर्भ में 31 August के बाद का व्यवहार failed breakout का उदाहरण है। यह पहचान बाद के sessions देखकर होती है; 31 August को भविष्य निश्चित नहीं था।
+
+## Breakout fail क्यों हो सकता है?
+
+Price का ऊपर जाना यह सुनिश्चित नहीं करता कि उन ऊँचे भावों पर खरीदारी आगे भी उसे सहारा देगी। Market expectations बदल सकती हैं और नई जानकारी के बाद supply-demand का संतुलन बदल सकता है।
+
+इस SBI उदाहरण में OHLC data हमें बताता है कि Price कहाँ पहुँचा और कहाँ बंद हुआ। यह अकेले गिरावट की वास्तविक वजह नहीं बताता। इसलिए इसे बिना अलग evidence के news, profit booking या "operator trap" से जोड़ना सही नहीं होगा।
+
+## Retest और Failed Breakout में फर्क
+
+Breakout के बाद Price पुराने level की ओर लौटे तो उसे retest की संभावना की तरह देखा जा सकता है। केवल वापसी होते ही failure घोषित करना जरूरी नहीं।
+
+देखना पड़ता है कि Price उस zone के आसपास संभलता है या नीचे जाकर वहीं Close करता है और कमजोरी आगे जारी रहती है। इस उदाहरण में अगले दो sessions के Close पुराने zone से नीचे थे।
+
+## Chart पढ़ने का आसान तरीका
+
+- पहले Timeframe और Resistance zone तय करें; बाद की candle देखकर सुविधा से line न बदलें।
+- High के साथ Close भी पढ़ें। अधूरी candle का Close final नहीं होता।
+- अगली candles में देखें कि Price zone के ऊपर टिक रहा है या वापस नीचे आ गया।
+- Volume अतिरिक्त जानकारी देता है, लेकिन अधिक Volume भी सफलता की guarantee नहीं है।
+
+Close की confirmation जानकारी बढ़ाती है, risk खत्म नहीं करती। यही इस Real Chart की मुख्य सीख है।
+
+यह लेख केवल stock-market education के लिए है, SBI में खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Support Zone क्या है](/post/support-zone-breakdown-hindi)
+- [Volume कैसे पढ़ें](/post/stock-market-volume-hindi)
+- [Daily और Weekly Chart में फर्क](/post/daily-vs-weekly-candlestick-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. False Breakout क्या होता है?**
+Price किसी चुने हुए support या resistance को पार करता है, लेकिन उस दिशा में टिक नहीं पाता और वापस लौट आता है। पहचान चुने हुए Timeframe और नियमों पर निर्भर करती है।
+
+**2. क्या Resistance के ऊपर High बनना पर्याप्त है?**
+नहीं। Price ऊपर जाने के बाद उसी session में वापस आ सकता है। Close और आगे की candles से अधिक जानकारी मिलती है।
+
+**3. क्या Resistance के ऊपर Close मिलने पर तेजी पक्की है?**
+नहीं। SBI के इस उदाहरण में ऊपर Close मिलने के बाद अगले session में Price फिर zone के नीचे आ गया।
+
+**4. Retest और Failed Breakout में क्या फर्क है?**
+Retest में Price पुराने level की ओर लौटता है। Failure का आकलन इस बात से होता है कि वह level संभलता है या Price वापस पुराने area में जाकर कमजोरी दिखाता है।
+
+**5. क्या हर False Breakout manipulation होता है?**
+नहीं। केवल OHLC Chart देखकर किसी संस्था की भूमिका, इरादा या manipulation साबित नहीं किया जा सकता।`,
+    author: "HoshiyarStock",
+    date: "2026-10-15",
+    readTime: 8,
+    cover: "/resistance-false-breakout-hindi-thumbnail.png",
+  },
+  {
     id: "p20",
     slug: "daily-vs-weekly-candlestick-hindi",
     title: "Daily vs Weekly Candlestick: एक ही शेयर का Chart अलग क्यों दिखता है?",
