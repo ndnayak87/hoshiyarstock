@@ -2,6 +2,107 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p22",
+    slug: "marubozu-candlestick-pattern-hindi",
+    title: "Marubozu Candle क्या है? बड़ी Body का मतलब Real Chart से समझें",
+    category: "Candle Patterns",
+    tags: ["marubozu", "candlestick patterns", "bullish candle", "bearish candle", "price action", "sbi"],
+    excerpt: "SBI की वास्तविक candle से सीखें textbook Marubozu और छोटी wick वाले उदाहरण का फर्क, साथ में Body की गणना और अगले sessions का व्यवहार।",
+    content: `Chart में एक बड़ी हरी candle दिखे और उसके ऊपर-नीचे wick बहुत छोटी हो, तो अक्सर ध्यान तुरंत उसी पर जाता है। लेकिन क्या ऐसी candle के बाद तेजी पक्की हो जाती है?
+
+Marubozu को समझने के लिए केवल रंग नहीं, Open, High, Low, Close और body का आकार देखना जरूरी है। SBI के वास्तविक Chart में इसी पहचान और उसकी सीमा को समझते हैं।
+
+## Marubozu Candle की पहचान
+
+Textbook Marubozu में पूरी candle की range ही उसकी body होती है। ऊपर और नीचे wick नहीं होती।
+
+| प्रकार | Textbook पहचान | उस session में क्या दिखता है? |
+|---|---|---|
+| Bullish Marubozu | Open = Low और Close = High | Low पर शुरुआत, High पर Close |
+| Bearish Marubozu | Open = High और Close = Low | High पर शुरुआत, Low पर Close |
+
+Real Charts में छोटी wick वाले लगभग समान आकार भी मिलते हैं। ऐसे उदाहरण को strict textbook pattern से अलग बताना चाहिए। हर बड़ी हरी या लाल candle Marubozu नहीं होती।
+
+## Real Chart: SBI की 6 August 2026 की Candle
+
+![SBI की 6 August 2026 की Marubozu जैसी bullish candle और 7 से 11 August के Daily candles](/marubozu-sbi-real-chart.png)
+
+Chart के बाएँ हिस्से में 6-11 August के Daily candles हैं। दाएँ हिस्से में 6 August की candle का बड़ा view है। Detail स्पष्ट दिखाने के लिए दोनों panels के price scales अलग हैं।
+
+| Price | वास्तविक value |
+|---|---:|
+| Open | ₹1,052.50 |
+| High | ₹1,088.10 |
+| Low | ₹1,052.50 |
+| Close | ₹1,085.00 |
+
+यहाँ Open और Low बराबर हैं, लेकिन Close, High से ₹3.10 नीचे है। इसलिए नीचे wick नहीं और ऊपर छोटी wick है।
+
+**यह Marubozu जैसी bullish candle है, perfect textbook Marubozu नहीं।**
+
+## Body और Wick का आसान हिसाब
+
+Body = Close − Open = ₹32.50
+
+पूरी Range = High − Low = ₹35.60
+
+Upper Wick = High − Close = ₹3.10
+
+Lower Wick = Open − Low = ₹0.00
+
+Body पूरी range का लगभग 91.3% है। इससे समझ आता है कि इस candle में body का हिस्सा कितना बड़ा है। लेकिन 91.3% केवल इस उदाहरण की गणना है; इसे हर Chart पर लागू होने वाला universal cutoff न मानें।
+
+## इस Candle से क्या समझ आता है?
+
+उस session में Price अपने Open से काफी ऊपर बंद हुआ और Close दिन के High के करीब रहा। यह उस अवधि की मजबूती दिखाता है।
+
+लेकिन इसका अर्थ यह नहीं कि Price पूरे दिन बिना नीचे आए सीधा चढ़ा। Daily OHLC हमें intraday movement का पूरा क्रम नहीं बताता। इसी तरह केवल shape देखकर यह तय नहीं होता कि अगला session कैसा होगा।
+
+## अगले Sessions में क्या हुआ?
+
+7 August को Close ₹1,097.20 रहा, यानी 6 August के Close से ऊपर। लेकिन 10 August को Close ₹1,071.00 और 11 August को ₹1,066.00 आया। शुरुआती तेजी के बाद Price फिर नीचे लौटा।
+
+इससे यह निष्कर्ष नहीं निकलता कि हर Marubozu fail होता है। यह एक historical example है, pattern की success rate का परीक्षण नहीं। यह केवल दिखाता है कि बड़ी bullish body के बाद लगातार तेजी तय नहीं होती।
+
+## Marubozu को पढ़ते समय क्या देखें?
+
+1. Candle पूरी हुई है या नहीं: चालू session में body और wick बदल सकती हैं।
+2. Candle कहाँ बनी है: आसपास का Resistance, Support और बड़ा trend भी पढ़ें।
+3. Body कितनी बड़ी है: पास की candles और उसी Timeframe से तुलना करें।
+4. अगले sessions क्या कर रहे हैं: केवल एक candle को भविष्य की guarantee न मानें।
+
+Marubozu का नाम याद रखने से ज्यादा जरूरी है उसके पीछे के OHLC को समझना। तब छोटी wick और वास्तविक body का फर्क भी साफ दिखता है।
+
+यह लेख केवल stock-market education के लिए है, SBI में खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Spinning Top क्या है](/post/spinning-top-candlestick-pattern-hindi)
+- [Daily और Weekly Chart में फर्क](/post/daily-vs-weekly-candlestick-hindi)
+- [False Breakout समझें](/post/resistance-false-breakout-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Marubozu Candle क्या होती है?**
+Textbook Marubozu में upper और lower wick नहीं होती; पूरी High-Low range उसकी body होती है।
+
+**2. Bullish Marubozu की पहचान क्या है?**
+Textbook Bullish Marubozu में Open, Low के बराबर और Close, High के बराबर होता है।
+
+**3. Bearish Marubozu की पहचान क्या है?**
+Textbook Bearish Marubozu में Open, High के बराबर और Close, Low के बराबर होता है।
+
+**4. क्या छोटी wick वाली candle भी Marubozu कहलाती है?**
+कुछ व्यावहारिक पहचान में छोटी wicks स्वीकार की जाती हैं। ऐसी candle को perfect textbook Marubozu से अलग बताना और वास्तविक OHLC दिखाना बेहतर है।
+
+**5. क्या Bullish Marubozu के बाद तेजी पक्की होती है?**
+नहीं। Candle उस अवधि की स्थिति दिखाती है; अगली कीमत की guarantee नहीं देती।`,
+    author: "HoshiyarStock",
+    date: "2026-10-16",
+    readTime: 8,
+    cover: "/marubozu-candle-hindi-thumbnail.png",
+  },
+  {
     id: "p21",
     slug: "resistance-false-breakout-hindi",
     title: "Resistance Breakout के बाद Price क्यों गिरता है? Real Chart से समझें",
