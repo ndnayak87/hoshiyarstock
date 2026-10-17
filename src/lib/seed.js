@@ -2,6 +2,114 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p23",
+    slug: "true-range-vs-candle-range-hindi",
+    title: "True Range क्या है? Gap का असर SBI के Real Chart से समझें",
+    category: "Basics",
+    tags: ["true range", "atr basics", "volatility", "candlestick", "gap", "stock market basics"],
+    excerpt: "SBI के वास्तविक data से जानें कि दिन की Range ₹18.20 होने पर True Range ₹23.40 कैसे बनती है और Opening Gap को सीधे जोड़ना गलत क्यों है।",
+    content: `किसी दिन शेयर का High ₹991.40 और Low ₹973.20 हो, तो उसकी दिन की Range ₹18.20 होगी। लेकिन अगर पिछले session का Close ₹968.00 था, तो सिर्फ High–Low देखने से एक जरूरी हिस्सा छूट जाता है।
+
+यहीं True Range काम आता है। यह आज की range के साथ पिछले Close को भी शामिल करता है। इससे Gap वाले sessions को समझने में मदद मिलती है।
+
+## Candle Body, Range और True Range अलग हैं
+
+Body, Open और Close के बीच का absolute अंतर है। High–Low Range उस session के सबसे ऊँचे और सबसे नीचे भाव का अंतर है। True Range में पिछले session का Close भी शामिल होता है।
+
+Daily Chart पर "Previous Close" का मतलब पिछले trading session का Close है, जरूरी नहीं कि वह पिछले calendar दिन का हो।
+
+## True Range का Formula
+
+इन तीन values में जो सबसे बड़ी हो, वही True Range या TR है:
+
+1. High − Low
+2. |High − Previous Close|
+3. |Low − Previous Close|
+
+यहाँ | | का मतलब absolute value है: अंतर का आकार लें, minus sign नहीं।
+
+## Real Chart: SBI, 16 September 2026
+
+![SBI के 16 September 2026 के Real Chart में ₹18.20 High–Low Range और ₹23.40 True Range की तुलना](/true-range-sbi-real-chart.png)
+
+15 September को SBI का Close ₹968.00 था। अगले session, 16 September के prices ये थे:
+
+| हिस्सा | Price |
+|---|---:|
+| Previous Close | ₹968.00 |
+| Open | ₹976.00 |
+| High | ₹991.40 |
+| Low | ₹973.20 |
+| Close | ₹991.40 |
+
+Chart में पीली dashed line पिछले Close को दिखाती है। नीला arrow केवल 16 September की High–Low Range है। पीला arrow पिछले Close से उस दिन के High तक की दूरी दिखाता है।
+
+## Step-by-step हिसाब
+
+| गणना | परिणाम |
+|---|---:|
+| High − Low: 991.40 − 973.20 | ₹18.20 |
+| Absolute High − Previous Close: 991.40 − 968.00 | ₹23.40 |
+| Absolute Low − Previous Close: 973.20 − 968.00 | ₹5.20 |
+
+सबसे बड़ी value ₹23.40 है। इसलिए इस दिन की True Range ₹23.40 है।
+
+Body अलग है: ₹991.40 − ₹976.00 = ₹15.40। एक ही candle के लिए Body ₹15.40, High–Low Range ₹18.20 और True Range ₹23.40 मिलती है।
+
+## क्या Opening Gap को Range में जोड़ देना चाहिए?
+
+नहीं। इस उदाहरण में Opening Gap ₹976.00 − ₹968.00 = ₹8.00 है। लेकिन Range में ₹8.00 जोड़ने पर ₹26.20 मिलेगा, जो सही TR नहीं है।
+
+क्यों? क्योंकि Open से Low तक की ₹2.80 दूरी दिन की range में पहले से शामिल है। उसे फिर जोड़ने से double counting होती है। सही तरीका तीन distances का maximum लेना है।
+
+इस उदाहरण में Previous Close और आज के Low के बीच ₹5.20 का अंतर है। यही हिस्सा High–Low Range से बाहर है, इसलिए ₹18.20 + ₹5.20 = ₹23.40 मिलता है।
+
+## क्या Gap वाले हर दिन TR बड़ी होगी?
+
+Opening Gap होने पर भी जरूरी नहीं कि True Range, High–Low से बड़ी हो। अगर Price बाद में इतना घूमे कि Previous Close आज की High–Low range के अंदर आ जाए, तो TR और High–Low बराबर होंगे।
+
+Valid OHLC data में True Range, High–Low से छोटी नहीं हो सकती, क्योंकि High–Low खुद formula की तीन candidates में शामिल है।
+
+## True Range और ATR में फर्क
+
+True Range एक period की value है। Average True Range या ATR कई periods की TR values को average/smooth करके बनता है। आम setting 14 periods है, लेकिन Timeframe और setting बदल सकती है।
+
+यहाँ ₹23.40 केवल एक दिन की TR है, ATR(14) नहीं। ATR की exact value के लिए पर्याप्त historical data और चुनी हुई smoothing method चाहिए।
+
+TR और ATR movement का आकार समझने में मदद करते हैं। ये अपने आप अगली तेजी या गिरावट नहीं बताते। इस उदाहरण में TR और Close-to-Close बढ़त की absolute amount समान है क्योंकि Close ही High है; ऐसा हर दिन नहीं होता।
+
+Chart पढ़ते समय candle के साथ Previous Close भी देखें। इससे session के भीतर की range और sessions के बीच का Gap अलग समझ आएगा।
+
+यह लेख केवल शिक्षा के लिए है, SBI में खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Gap Up और Gap Down क्या हैं](/post/gap-up-gap-down-hindi)
+- [Daily और Weekly Chart में फर्क](/post/daily-vs-weekly-candlestick-hindi)
+- [Marubozu Candle क्या है](/post/marubozu-candlestick-pattern-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. True Range क्या है?**
+यह आज की High–Low Range और पिछले Close से High तथा Low की absolute distances में सबसे बड़ी value है।
+
+**2. True Range का formula क्या है?**
+TR = Max(High − Low, |High − Previous Close|, |Low − Previous Close|)।
+
+**3. क्या Opening Gap को High–Low Range में जोड़ सकते हैं?**
+हमेशा नहीं। इससे कुछ movement दो बार गिना जा सकता है। सही TR के लिए तीन distances का maximum लें।
+
+**4. क्या True Range और ATR एक ही हैं?**
+नहीं। TR एक period की value है; ATR कई periods की TR values का average या smoothed measure है।
+
+**5. क्या बढ़ता ATR तेजी का संकेत है?**
+अकेले ATR से दिशा तय नहीं होती। इसका उपयोग volatility समझने के लिए किया जाता है।`,
+    author: "HoshiyarStock",
+    date: "2026-10-17",
+    readTime: 8,
+    cover: "/true-range-hindi-thumbnail.png",
+  },
+  {
     id: "p22",
     slug: "marubozu-candlestick-pattern-hindi",
     title: "Marubozu Candle क्या है? बड़ी Body का मतलब Real Chart से समझें",
