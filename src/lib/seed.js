@@ -2,6 +2,97 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p24",
+    slug: "bullish-harami-candlestick-pattern-hindi",
+    title: "Bullish Harami क्या है? बड़ी लाल Candle के अंदर हरी Body का मतलब",
+    category: "Candle Patterns",
+    tags: ["bullish harami", "candlestick patterns", "inside bar", "price action", "sbi"],
+    excerpt: "बड़ी लाल candle के अंदर हरी body बनने का मतलब जानें। SBI के वास्तविक data से Bullish Harami की पहचान और उसकी सीमाएँ समझें।",
+    content: `गिरते हुए Chart में बड़ी लाल candle बने और अगले session की छोटी हरी body उसी के अंदर रह जाए, तो क्या गिरावट खत्म हो गई?
+
+यह Bullish Harami की बनावट हो सकती है। लेकिन pattern दिखना और trend सचमुच बदलना अलग बातें हैं। SBI के Real Chart से इसकी पहचान और सीमाएँ समझते हैं।
+
+## Bullish Harami की पहचान
+
+यह दो candles का pattern है। सामान्य bullish रूप में पहले गिरावट का संदर्भ, फिर बड़ी लाल body और उसके बाद अपेक्षाकृत छोटी हरी body दिखती है। दूसरी body पहली body की सीमाओं के अंदर होती है। इसे संभावित bullish reversal की तरह पढ़ा जाता है, पक्की तेजी की तरह नहीं।
+
+केवल लाल candle के बाद हरी candle बन जाना पर्याप्त नहीं। उनके Open और Close की तुलना करें और उससे पहले का Chart भी देखें।
+
+## Real Chart: SBI, 15–16 September 2026
+
+![SBI के 15–16 September 2026 की candles में लाल body के भीतर हरी body और अगले दो sessions](/bullish-harami-sbi-real-chart.png)
+
+Chart में पहले कुछ sessions की कमजोरी, 15–16 September की जोड़ी और उसके बाद के दो sessions दिखाए गए हैं। दाईं तरफ दोनों bodies का बड़ा view है। Detail के लिए दोनों panels के price scales अलग हैं।
+
+| तारीख | Open ₹ | High ₹ | Low ₹ | Close ₹ |
+|---|---:|---:|---:|---:|
+| 15 September | 994.00 | 999.80 | 968.00 | 968.00 |
+| 16 September | 976.00 | 991.40 | 973.20 | 991.40 |
+
+15 September की लाल body ₹968 से ₹994 तक है। 16 September की हरी body ₹976 से ₹991.40 तक है। दूसरी body पूरी तरह पहली body के अंदर है।
+
+पहली body ₹26.00 और दूसरी ₹15.40 है। दूसरी body पहली की लगभग 59.2% है—छोटी जरूर है, लेकिन बहुत छोटी नहीं। यह broad body-containment पहचान का उदाहरण है; ज्यादा सख्त scanner छोटी body की अलग शर्त लगा सकता है। 59.2% कोई universal Harami cutoff नहीं है।
+
+## पहले की गिरावट क्यों देखें?
+
+इससे पहले 7 September का Close ₹1,005.90 था और 15 September तक ₹968.00 आया। बीच में हरे sessions भी थे, इसलिए यह लगातार हर दिन गिरने वाला क्रम नहीं था। फिर भी दिखाए गए छोटे window में समग्र कमजोरी का संदर्भ मिलता है।
+
+बिना prior weakness देखे, केवल दो candles के आकार से बड़े trend reversal का निष्कर्ष निकालना ठीक नहीं।
+
+## अगले sessions में क्या हुआ?
+
+17 September को High ₹1,000.90 तक गया, लेकिन Close ₹988.70 रहा—16 September के Close से नीचे। 18 September को Close ₹996.20 मिला।
+
+इसलिए तत्काल अगला session केवल तेजी वाला नहीं था। पहले pullback और फिर recovery दिखाई दी। 18 September का Close पहली लाल body की ऊपरी सीमा ₹994 से ऊपर था, लेकिन पहली candle के High ₹999.80 से नीचे था। Body boundary और High एक ही level नहीं हैं।
+
+यह सीमित historical observation है, pattern की success rate या लंबे uptrend का प्रमाण नहीं।
+
+## Harami और Inside Bar में फर्क
+
+| Pattern | मुख्य तुलना |
+|---|---|
+| Harami | दूसरी real body पहली real body के अंदर |
+| Inside Bar | दूसरी candle का पूरा High–Low पहली candle के High–Low के अंदर |
+| Bullish Engulfing | दूसरी bullish body पिछली bearish body को ढकती है |
+
+इस SBI जोड़ी में दूसरी candle का पूरा range भी पहले के range के अंदर है। इसलिए यह Inside Bar की range वाली शर्त भी पूरी करती है। एक ही जोड़ी में दोनों बनावट हो सकती हैं, लेकिन उनकी definitions अलग हैं।
+
+## Chart पढ़ने का आसान तरीका
+
+पहले Timeframe और prior trend देखें। फिर bodies की boundaries निकालें। Candle पूरी होने के बाद ही आकार तय करें। अगली candles में केवल हरा-लाल रंग नहीं, High, Low और Close भी पढ़ें।
+
+Bullish Harami को "गिरावट के बाद व्यवहार बदलने की संभावना" की तरह देखें। यह अपने आप खरीदने का आदेश या तय target नहीं देता।
+
+यह लेख केवल शिक्षा के लिए है, SBI में खरीदने या बेचने की सलाह नहीं।
+
+## आगे पढ़ें
+
+- [Inside Bar क्या है](/post/inside-bar-candlestick-pattern-hindi)
+- [Marubozu Candle क्या है](/post/marubozu-candlestick-pattern-hindi)
+- [False Breakout समझें](/post/resistance-false-breakout-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Bullish Harami क्या होता है?**
+सामान्य bullish रूप में गिरावट के बाद बड़ी लाल body और उसके अंदर अपेक्षाकृत छोटी हरी body बनती है। इसे संभावित reversal pattern माना जाता है।
+
+**2. क्या सिर्फ लाल के बाद हरी candle पर्याप्त है?**
+नहीं। Body containment, relative size और पहले का trend भी देखना जरूरी है।
+
+**3. Harami और Inside Bar में क्या फर्क है?**
+Harami की मुख्य तुलना real bodies की है। Inside Bar में पूरी High–Low ranges की तुलना होती है।
+
+**4. क्या Harami और Engulfing एक जैसे हैं?**
+नहीं। Harami में दूसरी body पहली के अंदर होती है; Engulfing में दूसरी body पहली को ढकती है।
+
+**5. क्या Bullish Harami के बाद तेजी पक्की है?**
+नहीं। अगली candles में pullback, sideways movement या गिरावट भी हो सकती है। अकेला pattern guarantee नहीं देता।`,
+    author: "HoshiyarStock",
+    date: "2026-10-18",
+    readTime: 8,
+    cover: "/bullish-harami-hindi-thumbnail.png",
+  },
+  {
     id: "p23",
     slug: "true-range-vs-candle-range-hindi",
     title: "True Range क्या है? Gap का असर SBI के Real Chart से समझें",
