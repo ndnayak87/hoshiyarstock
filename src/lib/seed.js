@@ -2,6 +2,124 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p26",
+    slug: "risk-reward-ratio-hindi",
+    title: "Risk-Reward Ratio क्या है? Real Chart से 1:2 का हिसाब समझें",
+    category: "Basics",
+    tags: ["risk reward ratio", "stop loss", "target", "position sizing", "risk management", "hdfc bank"],
+    excerpt: "हर trade में संभावित फायदे के साथ planned नुकसान समझना भी जरूरी है। Real chart और रुपये के उदाहरण से Risk-Reward का हिसाब सीखें।",
+    content: `Stock खरीदते समय अक्सर पहला सवाल होता है—"कितना बढ़ सकता है?" इसके साथ दूसरा सवाल भी जरूरी है—"अगर मेरा अनुमान गलत हुआ, तो कितना नुकसान हो सकता है?"
+
+**Risk-Reward Ratio इन्हीं दो रकम की तुलना है: तय Stop तक संभावित नुकसान और Target तक संभावित फायदा।** यह Target आने की संभावना या मुनाफे की गारंटी नहीं बताता।
+
+## 1:2 का मतलब क्या है?
+
+इस article में हमेशा **Risk : Reward** का क्रम इस्तेमाल किया गया है। 1:2 का मतलब है ₹1 के planned risk के बदले ₹2 का संभावित reward।
+
+कुछ platforms Reward/Risk का उलटा क्रम दिखाते हैं। इसलिए केवल ratio पढ़ने के बजाय देखें कि कौन-सी रकम पहले लिखी है।
+
+मान लें किसी cash-equity long trade की Entry ₹500, Stop ₹490 और Target ₹520 है:
+
+- Risk प्रति share = ₹500 − ₹490 = ₹10
+- Reward प्रति share = ₹520 − ₹500 = ₹20
+- Risk : Reward = ₹10 : ₹20 = **1:2**
+
+यह शुरुआती हिसाब brokerage, अन्य charges और slippage को शामिल नहीं करता।
+
+## Real HDFC Bank Chart में समझें
+
+![HDFC Bank के historical candles पर काल्पनिक Entry 714, Stop 704 और Target 734](/risk-reward-hdfc-chart.jpg)
+
+यह HDFC Bank का **8–16 October 2026 का Daily chart** है। Candles historical OHLC data पर बनी हैं। Entry, Stop और Target की lines केवल गणित समझाने के लिए बनाई गई practice plan हैं; यह उस समय दी गई trading call नहीं है।
+
+13 October का Close ₹714 था। अभ्यास के लिए इसी Close पर Entry मानते हैं:
+
+| Practice level | कीमत |
+|---|---:|
+| Entry | ₹714 |
+| Stop | ₹704 |
+| Target | ₹734 |
+| Planned risk प्रति share | ₹10 |
+| Potential reward प्रति share | ₹20 |
+
+Chart में नीली line Entry, लाल line Stop और हरी line Target दिखाती है।
+
+14 October का Low ₹707.95 था। 15 October का High ₹728 और 16 October का High ₹734.90 था। यानी इस चुने हुए historical example में अगले sessions का price range पहले ₹734 तक पहुँचा; ₹704 तक नहीं गिरा।
+
+**यह hindsight illustration है।** Closing price पर वास्तविक Entry, order fill और बताए गए भाव पर exit होने की पुष्टि इस Daily chart से नहीं होती। इस एक उदाहरण से strategy की success rate भी नहीं निकाली जा सकती।
+
+## Stop और Target सिर्फ ratio बनाने के लिए न चुनें
+
+ऊपर ₹704 और ₹734 गणना सिखाने के लिए चुने गए हैं। वास्तविक analysis में Stop उस जगह से जुड़ा होना चाहिए जहाँ trade का तर्क गलत पड़ता है। Target तय करते समय सामने मौजूद Resistance और price structure देखना जरूरी है।
+
+अगर chart पर संभावित रुकावट पास है, तो केवल 1:2 दिखाने के लिए दूर Target लिख देना उपयोगी analysis नहीं है। पहले setup और levels जाँचें, फिर उनका ratio निकालें।
+
+## Quantity बदलने से रुपये का risk बदलता है
+
+उसी ₹10 प्रति share risk वाले example में:
+
+| Shares | Planned loss at Stop | Potential gain at Target |
+|---|---:|---:|
+| 10 | ₹100 | ₹200 |
+| 25 | ₹250 | ₹500 |
+| 50 | ₹500 | ₹1,000 |
+
+Ratio हर row में 1:2 है, लेकिन रुपये में exposure अलग है।
+
+अगर कोई केवल गणना के लिए ₹500 का risk budget रखता है:
+
+**Quantity = ₹500 ÷ ₹10 = 50 shares**
+
+₹714 की Entry पर 50 shares की खरीद कीमत ₹35,700 होगी। इसलिए risk budget के साथ उपलब्ध capital भी देखना होगा। यह cash shares का सरल उदाहरण है; derivatives में lot size और contract specifications अलग होते हैं।
+
+## क्या 1:2 होने से हर बार फायदा होगा?
+
+नहीं। मान लें 10 काल्पनिक trades में हर loss ठीक ₹100 और हर win ठीक ₹200 है:
+
+- 4 wins: 4 × ₹200 = ₹800
+- 6 losses: 6 × ₹100 = ₹600
+- कुल परिणाम: ₹200 profit, charges से पहले
+
+लेकिन केवल 3 wins हों तो ₹600 gain और ₹700 loss, यानी ₹100 net loss होगा।
+
+इन निश्चित payoff वाली assumptions में break-even win rate लगभग **33.33%** है। Charges जोड़ने पर उससे अधिक win rate चाहिए। वास्तविक trades में partial exits और अलग-अलग loss amounts होने से हिसाब बदल जाता है।
+
+## Stop होने पर भी नुकसान ज्यादा क्यों हो सकता है?
+
+Stop एक तय exit trigger हो सकता है, लेकिन उस भाव पर execution हमेशा सुनिश्चित नहीं होता। Gap, liquidity और slippage के कारण वास्तविक loss planned loss से अधिक हो सकता है। Stop-limit order में price protection होने पर भी order पूरा न होने का जोखिम रहता है।
+
+इसलिए **planned risk और actual loss को एक ही चीज न समझें।** Trade journal में Entry, planned Stop, Target, actual exit और charges दर्ज करने से असली नतीजे समझ आते हैं।
+
+*यह लेख financial education के लिए है। Historical chart और practice levels किसी stock को खरीदने या बेचने की सलाह नहीं हैं।*
+
+## आगे पढ़ें
+
+- [Support Zone कैसे समझें](/post/support-zone-breakdown-hindi)
+- [Resistance और False Breakout](/post/resistance-false-breakout-hindi)
+- [Pullback और Reversal में फर्क](/post/pullback-vs-trend-reversal-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Risk-Reward Ratio क्या है?**
+यह Entry से Stop तक planned नुकसान और Entry से Target तक संभावित फायदे की तुलना है।
+
+**2. 1:2 Risk-Reward का क्या मतलब है?**
+₹1 planned risk के बदले ₹2 potential reward। यह Target मिलने की गारंटी नहीं है।
+
+**3. क्या 1:2 ratio हर trade के लिए सही है?**
+कोई एक ratio हर setup के लिए सही नहीं है। Price structure, win rate, charges और actual execution भी मायने रखते हैं।
+
+**4. Quantity कैसे निकालें?**
+Cash shares के सरल example में risk budget को प्रति share planned risk से भाग दें और whole shares तक नीचे round करें। उपलब्ध capital भी जाँचें।
+
+**5. क्या Stop से ज्यादा loss हो सकता है?**
+हाँ। Gap और slippage से actual loss बढ़ सकता है; stop-limit order पूरा भी नहीं हो सकता।`,
+    author: "HoshiyarStock",
+    date: "2026-10-22",
+    readTime: 9,
+    cover: "/risk-reward-ratio-hindi-thumbnail.jpg",
+  },
+  {
     id: "p25",
     slug: "pullback-vs-trend-reversal-hindi",
     title: "Pullback और Trend Reversal में क्या फर्क है? Real Chart से समझें",
