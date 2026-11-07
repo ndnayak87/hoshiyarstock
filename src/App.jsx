@@ -4,6 +4,7 @@ import { AuthProvider, useAuth } from "./lib/auth";
 import { usePosts } from "./lib/store";
 import Header from "./components/Header";
 import SubscribePopup from "./components/SubscribePopup";
+import DiwaliBanner from "./components/DiwaliBanner";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
 import Login from "./pages/Login";
@@ -49,6 +50,7 @@ function Shell() {
       <ScrollTop />
       <RouteTitle posts={posts} />
       <Header search={search} setSearch={setSearch} />
+      <DiwaliBanner />
       <SubscribePopup />
       <Routes>
         <Route path="/" element={<Home posts={posts} search={search} />} />
