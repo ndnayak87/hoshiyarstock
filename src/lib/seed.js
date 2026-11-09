@@ -2,6 +2,170 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p28",
+    slug: "vwap-indicator-kya-hai-hindi",
+    title: "VWAP क्या है? बड़े Traders इस Indicator को क्यों देखते हैं? जानिए आसान हिंदी में",
+    category: "Basics",
+    tags: ["vwap", "volume weighted average price", "technical analysis", "volume analysis", "stock market basics"],
+    excerpt: "VWAP क्या होता है और Stock Market में इसका क्या महत्व है? Formula, Calculation, Chart Reading और Moving Average से अंतर आसान हिंदी में समझें।",
+    content: `Stock Market में आपने Moving Average, RSI और MACD जैसे Indicators के बारे में जरूर सुना होगा। लेकिन एक ऐसा Indicator भी है जो Price के साथ Volume को भी महत्व देता है। इसका नाम है VWAP।
+
+कई नए निवेशक केवल Candlestick देखकर Market की दिशा समझने की कोशिश करते हैं, लेकिन क्या आपने कभी सोचा है कि किसी शेयर का औसत कारोबार किस कीमत पर हुआ है?
+
+यहीं पर VWAP महत्वपूर्ण हो जाता है।
+
+## VWAP क्या होता है?
+
+VWAP का पूरा नाम **Volume Weighted Average Price** है।
+
+हिंदी में इसे Volume के आधार पर निकाला गया औसत भाव कह सकते हैं।
+
+साधारण Moving Average में अलग-अलग कीमतों का औसत देखा जाता है, जबकि VWAP में Volume को भी ध्यान में रखा जाता है।
+
+इसका मतलब है कि जिस कीमत पर ज्यादा Shares का कारोबार हुआ है, उसका VWAP पर ज्यादा प्रभाव पड़ता है।
+
+आसान शब्दों में समझें:
+
+VWAP बताता है कि किसी निश्चित Trading Session में शेयर का Volume के हिसाब से औसत कारोबार किस कीमत पर हुआ।
+
+## VWAP कैसे Calculate होता है?
+
+VWAP की गणना समझने के लिए तीन चीजें जानना जरूरी हैं:
+
+1. Typical Price
+2. Trading Volume
+3. Cumulative Total
+
+Typical Price का Formula:
+
+Typical Price = (High + Low + Close) ÷ 3
+
+इसके बाद Typical Price को Volume से Multiply किया जाता है।
+
+अंतिम Formula:
+
+VWAP = Cumulative (Typical Price × Volume) ÷ Cumulative Volume
+
+आजकल Trading Chart Platforms यह गणना अपने आप करते हैं।
+
+## VWAP को एक आसान उदाहरण से समझिए
+
+मान लीजिए किसी काल्पनिक शेयर में दो अलग-अलग कीमतों पर कारोबार हुआ:
+
+| Price | Volume |
+|---:|---:|
+| ₹100 | 1,000 Shares |
+| ₹110 | 3,000 Shares |
+
+अब साधारण Average Price होगा ₹105।
+
+लेकिन Volume Weighted Average Price होगा:
+
+(100 × 1,000 + 110 × 3,000) ÷ 4,000
+
+**VWAP = ₹107.50**
+
+ध्यान दीजिए कि ₹110 पर ज्यादा Shares का कारोबार हुआ, इसलिए VWAP ₹110 के ज्यादा करीब आया।
+
+यही VWAP की सबसे खास बात है।
+
+## Chart पर VWAP कैसे दिखाई देता है?
+
+जब आप अपने Chart पर VWAP Indicator लगाते हैं तो यह एक Line के रूप में दिखाई देता है।
+
+इसे समझने के लिए तीन सामान्य स्थितियां देखिए:
+
+**स्थिति 1: Price, VWAP के ऊपर**
+
+जब शेयर की कीमत VWAP Line के ऊपर रहती है, तो यह उस Session में अपेक्षाकृत मजबूत Price Movement का संकेत हो सकता है।
+
+**स्थिति 2: Price, VWAP के नीचे**
+
+जब कीमत VWAP Line के नीचे रहती है, तो यह अपेक्षाकृत कमजोर Price Movement दिखा सकती है।
+
+**स्थिति 3: Price बार-बार VWAP को Cross करे**
+
+ऐसी स्थिति में Market में स्पष्ट दिशा की कमी हो सकती है और Price दोनों तरफ घूम सकता है।
+
+ध्यान रहे, ये केवल सामान्य संकेत हैं, निश्चित भविष्यवाणी नहीं।
+
+## VWAP और Moving Average में क्या अंतर है?
+
+दोनों Indicators देखने में कुछ हद तक समान लग सकते हैं, लेकिन इनका काम अलग है।
+
+| आधार | VWAP | Moving Average |
+|---|---|---|
+| मुख्य आधार | Price + Volume | Price |
+| Volume का प्रभाव | शामिल होता है | सामान्य MA में नहीं |
+| सामान्य उपयोग | Intraday Analysis | Trend Analysis |
+| Calculation | Volume Weighted | चुनी गई अवधि का औसत |
+
+## VWAP की सबसे बड़ी खासियत क्या है?
+
+VWAP की सबसे बड़ी खासियत यह है कि यह केवल Price नहीं देखता, बल्कि कारोबार की मात्रा को भी महत्व देता है।
+
+इसी कारण Market Participants इसे Average Execution Price और Intraday Market Analysis को समझने के लिए देखते हैं।
+
+लेकिन केवल VWAP देखकर किसी शेयर की भविष्य की दिशा तय नहीं की जा सकती।
+
+## VWAP की Limitations भी समझिए
+
+हर Technical Indicator की तरह VWAP की भी कुछ सीमाएं हैं:
+
+- यह Past Price और Volume Data पर आधारित होता है।
+- तेजी से बदलते Market में यह पीछे रह सकता है।
+- Sideways Market में Price बार-बार VWAP को Cross कर सकता है।
+- यह अपने आप में Buy या Sell का निश्चित Signal नहीं है।
+- इसका सामान्य Session VWAP हर नए Trading Session में दोबारा Calculate होता है।
+
+इसलिए इसे अन्य Market Information के साथ समझना जरूरी है।
+
+## Beginners के लिए जरूरी बात
+
+अगर आप Stock Market सीख रहे हैं, तो VWAP को केवल एक Indicator नहीं बल्कि Price और Volume के बीच संबंध समझने का एक माध्यम मानिए।
+
+पहले इसके Calculation और Chart Behaviour को समझें। फिर Historical Charts पर इसके उदाहरणों का अध्ययन करें।
+
+बिना पर्याप्त जानकारी के किसी एक Indicator के आधार पर निवेश या Trading का निर्णय नहीं लेना चाहिए।
+
+## निष्कर्ष
+
+VWAP यानी Volume Weighted Average Price एक महत्वपूर्ण Technical Indicator है, जो Price और Volume दोनों को मिलाकर औसत कारोबार की कीमत बताता है।
+
+यह समझने में मदद करता है कि किसी Trading Session में ज्यादा कारोबार किस Price Level के आसपास हुआ।
+
+Stock Market की बेहतर समझ के लिए VWAP की जानकारी उपयोगी हो सकती है, लेकिन याद रखें कि कोई भी Indicator बाजार की दिशा की गारंटी नहीं देता।
+
+*Disclaimer: यह लेख केवल शैक्षणिक उद्देश्य के लिए है। इसे निवेश या Trading की सलाह न समझें। किसी भी वित्तीय निर्णय से पहले अपनी स्वतंत्र जानकारी और उचित विशेषज्ञ सलाह पर विचार करें।*
+
+## आगे पढ़ें
+
+- [Moving Average (SMA) क्या है](/post/moving-average-sma-hindi)
+- [Volume कैसे पढ़ें](/post/stock-market-volume-hindi)
+- [True Range क्या है](/post/true-range-vs-candle-range-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. VWAP का Full Form क्या है?**
+VWAP का Full Form Volume Weighted Average Price है।
+
+**2. VWAP किस काम आता है?**
+यह Price और Volume के आधार पर किसी Trading Session का औसत कारोबार मूल्य समझने में मदद करता है।
+
+**3. VWAP Beginners के लिए उपयोगी है?**
+हां, Beginners इसके माध्यम से Price और Volume के संबंध को समझ सकते हैं।
+
+**4. क्या VWAP और Moving Average एक ही हैं?**
+नहीं, VWAP में Volume को भी शामिल किया जाता है, जबकि सामान्य Moving Average में केवल Price का औसत लिया जाता है।
+
+**5. क्या VWAP हमेशा सही संकेत देता है?**
+नहीं, यह एक Lagging Indicator है और अकेले इसके आधार पर Market का भविष्य तय नहीं किया जा सकता।`,
+    author: "HoshiyarStock",
+    date: "2026-11-09",
+    readTime: 8,
+    cover: "/vwap-indicator-kya-hai-hindi-thumbnail.jpg",
+  },
+  {
     id: "p27",
     slug: "stock-loss-recovery-percentage-hindi",
     title: "Share 20% गिरा, तो Recovery के लिए 25% क्यों बढ़ना पड़ेगा?",
