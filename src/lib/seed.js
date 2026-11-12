@@ -2,6 +2,112 @@ export const CATS = ["Candle Patterns", "Basics", "Market Gyaan"];
 
 export const SEED_POSTS = [
   {
+    id: "p29",
+    slug: "stock-market-volume-analysis-hindi",
+    title: "Stock Market में Volume क्या होता है? Price के पीछे छिपी Buying और Selling की ताकत कैसे समझें?",
+    category: "Market Gyaan",
+    tags: ["volume analysis", "trading volume", "price action", "breakout", "technical analysis", "sbi"],
+    excerpt: "Volume क्या होता है? Candlestick Chart में High Volume, Low Volume, Buying और Selling Pressure तथा Breakout Confirmation को आसान हिंदी में समझें।",
+    content: `शेयर बाजार में ज्यादातर नए निवेशक किसी भी शेयर का चार्ट देखते समय केवल उसकी कीमत यानी Price पर ध्यान देते हैं। उन्हें लगता है कि अगर किसी शेयर की कीमत तेजी से ऊपर जा रही है तो उसमें मजबूत खरीदारी हो रही है। लेकिन किसी Price Movement के दौरान कितनी Trading Activity हुई, यह समझने के लिए Volume देखना जरूरी है।
+
+## Stock Market में Volume क्या होता है?
+
+Volume का मतलब है किसी निश्चित समय के दौरान किसी शेयर के कुल कितने शेयरों का कारोबार हुआ। उदाहरण के लिए, यदि किसी दिन किसी शेयर के 5,00,000 शेयरों का कारोबार हुआ, तो उस दिन का Trading Volume 5,00,000 shares होगा।
+
+हर पूरा हुआ Trade Volume में एक बार गिना जाता है। यदि एक व्यक्ति 100 शेयर खरीदता है और दूसरा वही 100 शेयर बेचता है, तो Volume 100 शेयर होगा, 200 नहीं।
+
+## Candlestick Chart में Volume कहां दिखाई देता है?
+
+Candlestick Chart के नीचे आमतौर पर अलग-अलग ऊंचाई की Vertical Bars दिखाई देती हैं। इन्हें Volume Bars कहते हैं।
+
+ऊंची Bar का अर्थ उस अवधि में अधिक कारोबार और छोटी Bar का अर्थ कम कारोबार है। कई चार्टिंग प्लेटफॉर्म में Bar का रंग उस अवधि की Candle के दिशा-रंग से मेल खाता है। Green Bar का अर्थ यह नहीं कि केवल Buyers ने कारोबार किया—हर Trade में Buyer और Seller दोनों होते हैं।
+
+## Price और Volume का आपस में क्या संबंध है?
+
+**A. Price ऊपर + Volume ऊपर**
+
+Price बढ़ने के साथ Volume भी बढ़े, तो तेजी के दौरान Trading Participation अधिक होने का संकेत मिल सकता है। फिर भी यह अपने आप आगे की तेजी की गारंटी नहीं है।
+
+**B. Price ऊपर + Volume नीचे**
+
+Price बढ़ रहा हो लेकिन Volume कम हो रहा हो, तो उस तेजी में भागीदारी कमजोर हो सकती है। इसे अन्य Price Action के साथ देखना चाहिए।
+
+**C. Price नीचे + Volume ऊपर**
+
+Price गिरने के साथ Volume बढ़े, तो बढ़ती Trading Activity और संभावित Selling Pressure का संकेत मिल सकता है।
+
+**D. Price नीचे + Volume नीचे**
+
+Price गिर रहा हो और Volume कम हो रहा हो, तो गिरावट के दौरान भागीदारी कम हो सकती है। इससे अपने आप Trend Reversal की पुष्टि नहीं होती।
+
+## High Volume और Low Volume में अंतर
+
+High Volume का अर्थ है कि किसी शेयर में सामान्य से अधिक कारोबार हुआ। Low Volume का अर्थ है सामान्य से कम कारोबार।
+
+तुलना के लिए पिछले 10 या 20 ट्रेडिंग सत्रों के औसत Volume को देखना उपयोगी हो सकता है। उदाहरण के लिए, यदि औसत Volume 2 लाख शेयर है और आज 5 लाख शेयरों का कारोबार हुआ, तो आज की Trading Activity औसत से अधिक है।
+
+## Breakout में Volume क्यों महत्वपूर्ण है?
+
+मान लीजिए किसी शेयर का Resistance ₹500 है और कीमत इसके ऊपर निकलती है। यदि Breakout के समय Volume भी औसत से अधिक है, तो यह संकेत दे सकता है कि उस मूवमेंट में अधिक भागीदारी है।
+
+यदि Volume कम है, तो Breakout की मजबूती पर अतिरिक्त सावधानी से विचार करना चाहिए। High Volume होने पर भी Breakout असफल हो सकता है; इसलिए Price Action और अन्य संदर्भ भी जरूरी हैं।
+
+## Volume का इस्तेमाल करते समय ये गलतियां न करें
+
+1. केवल बड़ी Volume Bar देखकर शेयर को मजबूत मान लेना।
+2. Volume की तुलना पिछले सत्रों से न करना।
+3. Green Volume को केवल Buying और Red Volume को केवल Selling समझना।
+4. High Volume को हमेशा तेजी का संकेत मानना।
+5. Volume के आधार पर अकेले भविष्य की कीमत तय करना।
+
+Volume एक सहायक Technical Analysis Tool है, भविष्य बताने वाला निश्चित संकेत नहीं।
+
+## Real Chart Example: SBI (NSE: SBIN)
+
+![SBI के 2 से 11 नवंबर 2026 के Daily Candlestick और Volume Bars](/sbi-volume-analysis-real-chart.png)
+
+नीचे दिया गया HD चार्ट State Bank of India के उपलब्ध वास्तविक दैनिक OHLC और Volume आंकड़ों पर आधारित है। इसमें 2 से 11 नवंबर 2026 तक उपलब्ध पूर्ण ट्रेडिंग सत्र दिखाए गए हैं। ऊपर के हिस्से में Candlesticks और नीचे Volume Bars हैं।
+
+ध्यान दें कि 3 नवंबर को Volume लगभग 27.96 million shares था, जबकि 2 नवंबर को लगभग 9.93 million shares था। 5 नवंबर को Volume लगभग 25.27 million shares रहा। यह केवल Trading Activity की तुलना है, किसी दिशा की निश्चित पुष्टि नहीं।
+
+Chart source: Yahoo Finance Historical Data — [SBIN.NS history](https://finance.yahoo.com/quote/SBIN.NS/history/)
+
+## निष्कर्ष: Price के साथ Volume देखना क्यों जरूरी है?
+
+Price हमें बताता है कि शेयर की कीमत किस दिशा में गई और Volume बताता है कि उस अवधि में कितने शेयरों का कारोबार हुआ।
+
+दोनों को एक साथ पढ़ने से Technical Analysis को बेहतर संदर्भ मिलता है। किसी भी निर्णय के लिए Volume को अकेला संकेत न मानें।
+
+**Disclaimer:** यह लेख केवल Stock Market Education और सामान्य जानकारी के उद्देश्य से है। यह किसी शेयर को खरीदने या बेचने की सलाह नहीं है। शेयर बाजार में जोखिम होता है।
+
+## आगे पढ़ें
+
+- [Volume पर पहला आर्टिकल (HDFC)](/post/stock-market-volume-hindi)
+- [False Breakout कैसे पहचानें](/post/resistance-false-breakout-hindi)
+- [VWAP क्या है](/post/vwap-indicator-kya-hai-hindi)
+
+## अक्सर पूछे जाने वाले सवाल
+
+**1. Stock Market में Volume क्या होता है?**
+किसी निश्चित समय में किसी शेयर के कुल कारोबार किए गए शेयरों की संख्या।
+
+**2. High Volume का क्या मतलब है?**
+सामान्य की तुलना में अधिक Trading Activity।
+
+**3. क्या High Volume हमेशा तेजी का संकेत है?**
+नहीं, High Volume तेजी और गिरावट दोनों में हो सकता है।
+
+**4. Chart में Volume कहां दिखता है?**
+आमतौर पर Candlestick Chart के नीचे Vertical Bars में।
+
+**5. Breakout में Volume क्यों देखते हैं?**
+इससे Breakout के दौरान Trading Participation समझने में मदद मिलती है।`,
+    author: "HoshiyarStock",
+    date: "2026-11-12",
+    readTime: 9,
+    cover: "/stock-market-volume-analysis-hindi-thumbnail.jpg",
+  },
+  {
     id: "p28",
     slug: "vwap-indicator-kya-hai-hindi",
     title: "VWAP क्या है? बड़े Traders इस Indicator को क्यों देखते हैं? जानिए आसान हिंदी में",
