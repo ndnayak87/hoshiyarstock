@@ -103,17 +103,3 @@ button{font-family:inherit}
 .popup-x:hover{color:var(--text)}
 @keyframes popin{from{transform:scale(.9) translateY(12px);opacity:0}to{transform:none;opacity:1}}
 @keyframes popfade{from{opacity:0}to{opacity:1}}
-
-/* Festival greeting */
-.festival{position:relative;display:flex;align-items:center;gap:14px;margin:16px 0 0;padding:14px 46px 14px 18px;border:1px solid rgba(251,191,36,.5);border-radius:var(--radius);background:linear-gradient(120deg,rgba(251,191,36,.14),rgba(249,115,22,.08) 45%,rgba(16,31,51,.9));box-shadow:0 10px 30px rgba(0,0,0,.28),inset 0 0 0 1px rgba(251,191,36,.06);overflow:hidden;animation:festivalIn .5s cubic-bezier(.2,.8,.25,1)}
-.festival::after{content:"";position:absolute;inset:0;background:radial-gradient(420px 120px at 12% 0%,rgba(251,191,36,.18),transparent 70%);pointer-events:none}
-.festival-hide{animation:festivalOut .42s ease forwards}
-.festival-icon{font-size:30px;line-height:1;filter:drop-shadow(0 0 10px rgba(251,191,36,.55))}
-.festival-text{position:relative;z-index:1}
-.festival-text strong{display:block;font-size:16px;font-weight:800;color:var(--gold);letter-spacing:.2px}
-.festival-text p{font-size:13.5px;line-height:1.55;color:#e8f1fc;margin-top:3px}
-.festival-x{position:absolute;top:8px;right:10px;z-index:2;background:none;border:0;color:var(--muted);font-size:14px;cursor:pointer;padding:4px 6px;border-radius:8px}
-.festival-x:hover{color:var(--text);background:rgba(255,255,255,.06)}
-@media(max-width:640px){.festival{padding:13px 42px 13px 14px;gap:10px}.festival-icon{font-size:26px}.festival-text strong{font-size:15px}.festival-text p{font-size:12.5px}}
-@keyframes festivalIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
-@keyframes festivalOut{to{opacity:0;transform:translateY(-10px)}}
