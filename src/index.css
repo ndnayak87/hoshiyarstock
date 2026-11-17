@@ -30,6 +30,8 @@ button{font-family:inherit}
 .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
 .btn-danger{background:#ef4444;color:#fff}
 .btn-small{padding:7px 13px;font-size:13px}
+.ig-link{display:inline-flex;align-items:center;gap:7px}
+.ig-link svg{flex:none}
 .risk{background:#3d1a0f;color:#fdba74;text-align:center;font-size:12px;font-weight:600;padding:7px 12px}
 
 /* Hero */
